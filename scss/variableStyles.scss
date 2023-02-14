@@ -1,0 +1,161 @@
+$whiteColor: #FFFFFF;
+$lightGrayColor:#9A9A9A;
+$darkGrayColor: #273B4A;
+$darkWhiteColor: #D9D9D9;
+$lightWhiteColor: #EEEEEE;
+$lightGreenColor: #5DE9B6;
+$blackColor: #000000;
+
+$fontFamilyBlack: 'Gramatika-Black', sans-serif;
+$fontFamilyRegular: 'Gramatika-Regular', sans-serif;
+$fontFamilyMedium: 'Gramatika-Medium', sans-serif;
+$fontFamilyBold: 'Gramatika-Bold', sans-serif;
+
+$borderHeader: 0.21vw solid $darkGrayColor;
+
+$border: 0.26vw solid $darkGrayColor;
+
+$borderMax: 5px solid $darkGrayColor;
+
+@mixin font($fontSize, $lineHeight, $color, $textAlign, $fontFamily) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $color;
+    text-align: $textAlign;
+    font-family: $fontFamily;
+}
+
+@mixin flex($direction, $content, $items) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $items;
+}
+
+@mixin indents($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin image($backgroundImage) {
+    background-repeat: no-repeat;
+    background-color: lightGrayColor;
+    background-image: $backgroundImage;
+}
+
+@mixin limits() {
+    min-width: 320px;
+    max-width: 2000px;
+}
+
+@mixin hover() {
+    transition: opacity 0.2s linear;
+                            
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+@mixin linkButton {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 20px;
+    @include hover();
+}
+
+@mixin pseudo() {
+    content: '';
+    position: absolute;
+    display: inline-block;
+}
+
+
+@mixin circleGreen() {
+    @include pseudo();
+    background-color: $lightGreenColor;
+    width: 3.3vw;
+    min-width: 10.56px;
+    max-width: 63.36px;
+    height: 3.3vw;
+    min-height: 10.56px;
+    max-height: 63.36px;
+    border-radius: 50%;
+}
+
+@mixin grid($columnStart, $columnEnd, $rowStart, $rowEnd) {
+    grid-column-start: $columnStart;
+    grid-column-end: $columnEnd;
+    grid-row-start: $rowStart;
+    grid-row-end: $rowEnd;
+}
+
+@mixin gridStep() {
+    @include indents(0 auto, 0);
+    box-sizing: border-box;
+    @include font(4.2vw, 1.125, $lightGreenColor, start, $fontFamilyBlack);
+    @include flex(row, center, center);
+    border-radius: 50%;
+    border: 0.36vw solid $lightGreenColor;
+    width: 7.97vw;
+    height: 7.97vw;
+    min-width: 25.5px;
+    min-height: 25.5px;
+    max-width: 153px;
+    max-height: 153px;
+
+    @media screen and (max-width: 319px) {
+        font-size: 13.44px;
+    }
+
+    @media screen and (min-width: 1999px) {
+        font-size: 80.64px;
+        border: 7px solid $lightGreenColor;
+    }
+}
+
+@mixin gridSubtitle() {
+    @include indents(2.5vw 0 1vw 0, 0);
+    @include font(1.82vw, 1.571, $darkGrayColor, center, $fontFamilyBlack);
+  
+    @media screen and (max-width: 319px) {
+        @include indents(8px 0 3.2px 0, 0);
+        font-size: 5.82px;
+    }
+
+    @media screen and (min-width: 1999px) {
+        @include indents(48px 0 19.2px 0, 0);
+        font-size: 34.94px;
+    }
+}
+
+@mixin gridInfo() {
+    @include indents(0, 0 0 5% 0);
+    @include font(1.5vw, 1.56, $darkGrayColor, center, $fontFamilyMedium); 
+
+    @media screen and (max-width: 319px) {
+        font-size: 5px;
+        @include indents(0, 0 0 3.2px 0);
+    }
+
+    @media screen and (min-width: 1999px) {
+      font-size: 30px;
+      @include indents(0, 0 0 19.2px 0);
+    }  
+}
+
+@mixin gridImage() {
+    height: 21.4vw;
+    min-height: 68.48px;
+    max-height: 411px;
+    width: 100%;
+    background-color: $darkWhiteColor;
+    border-radius: 1.04vw;
+
+    @media screen and (max-width: 319px) {
+      border-radius: 3.3px;
+    }
+
+    @media screen and (min-width: 1999px) {
+    border-radius: 19.97px;
+    }
+}

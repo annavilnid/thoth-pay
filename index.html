@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/blocks/index/index.css">
+    <title><Test></title> 
+    <!-- Уточнить! -->
+  </head>
+  <body class="page">
+    <header class="header">
+      <img class="header__logo" src="./images/main-logo.svg" alt="logo">
+      <nav class="header__navbar">
+        <ul class="header__links">
+          <li class="header__link-item">
+            <a href="#how-it-works" class="header__link">How it works</a>
+          </li>
+          <li class="header__link-item">
+            <a href="#docs" class="header__link">Docs</a>
+          </li>
+          <li class="header__link-item">
+            <a href="#fees" class="header__link">Payment fees</a>
+          </li>
+          <li class="header__link-item">
+            <a href="#node" class="header__link">Lightning node</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="header__button button">Merchant panel</a>
+    </header>
+
+    <main class="main">
+      <nav class="contacts">
+        <a href="#" class="contacts__link" target="_blank"><img class="contacts__logo" src="./images/telegram.svg" alt="telegram logo"></a>
+        <a href="#" class="contacts__link" target="_blank"><img class="contacts__logo" src="./images/twitter.svg" alt="twitter logo"></a>
+        <a href="#" class="contacts__link" target="_blank"><img class="contacts__logo" src="./images/facebook.svg" alt="facebook logo"></a>
+        <a href="#" class="contacts__link" target="_blank"><img class="contacts__logo" src="./images/email.svg" alt="email logo"></a>
+      </nav>
+
+      <section class="main__about about">
+        <h1 class="about__title title">Receive<span class="about__title-span"> payments in BTC, stablecoins for your business</span></h1>
+        <div class="about__description">
+          <p class="about__text">Thothpay - очень клевое приложение. Просто невъебенное. Похвалите еще приложение. Ну что я еще могу сказать: Я люблю Tothpay</p>
+          <a href="#" class="about__button button">Try now</a>
+          <ul class="about__list">
+            <li class="about__item">Поддерживаем валюты BTC, ETH.</li>
+            <li class="about__item">Оплата в стейблах BUSD и USDT on ERC20, BEP20, TRC20.</li>
+            <li class="about__item">Авторизация через Liqhgnint Network no emails, use own keys as auth, безопасно и удобно.</li>
+            <li class="about__item">Все платежи попадают сразу на холодное хранилище, безопасно.</li>
+            <li class="about__item">Поддерживаем Lightning Network платежи и рефанды.</li>
+            <li class="about__item">Приватные платежи через Liquid Network и L-USDT.</li>
+            </ul>
+        </div>
+      </section>
+
+      <section class="main__how-it-works how-it-works">
+        <div class="main__right-line">
+          <h2 id="how-it-works" class="how-it-works__title title">How it works</h2>
+          <div class="how-it-works__grid grid">
+            <div class="grid__one">1</div>
+            <h3 class="grid__two">Отправить счет</h3>
+            <p class="grid__three">Мерчант выставляет счёт invoice в своей локальной валюте</p>
+            <div class="grid__four"></div>
+            <div class="grid__five">2</div>
+            <h3 class="grid__six">Оплата</h3>
+            <p class="grid__seven">Пользователь оплачивает в той валюте, в которой ему удобно. Все сложности с переплатами и недоплатами мы берём на себя.</p>
+            <div class="grid__eight"></div>
+            <div class="grid__nine">3</div>
+            <h3 class="grid__ten">Передача</h3>
+            <p class="grid__eleven">Конвертация и вывод, мерчант в любой момент выводит свои средства на свой кошелёк в той валюте, в которой ему удобна.</p>
+            <div class="grid__twelve"></div>
+          </div>
+        </div>
+      </section>
+      <div class="left-line"></div>
+
+      <section class="main__docs docs">
+        <h2 id="docs" class="docs__title title">Docs</h2>
+        <div class="docs__wrapper">
+          <div class="docs__wrapper-text">
+            <p class="docs__text-bold">Do you want to automate payments for your shop with API?</p>
+            <p class="docs__text">Here the comprehensive documentation how to do this via our API</p>
+          </div>
+          <div class="docs__wrapper-arrow"></div>
+          <div class="docs__wrapper-buttons">
+            <a href="#" class="docs__button button">Онлайн Докс</a>
+            <a href="#" class="docs__button-light button">Cсыль PDF</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__fees fees">
+        <div class="fees__wrapper">
+          <h2 id="fees" class="fees__title title">Payment fees</h2>
+          <p class="fees__proposal">Basic plan</p>
+          <p class="fees__proposal">Personal infrastructure</p>
+        </div>
+        <div class="fees__table table">
+          <div class="table__row">
+            <p class="table__option">Fee per payment</p>
+            <p class="table__percent">0.1%</p>
+            <p class="table__percent">0.1%</p>
+          </div>
+          <div class="table__row">
+            <p class="table__option">Fee per swap</p>
+            <p class="table__percent">0.5%</p>
+            <p class="table__percent">0.5%</p>
+          </div>
+          <div class="table__row">
+            <p class="table__option">Global ETH, stables forwarders</p>
+            <p class="table__availability">+</p>
+            <p class="table__availability">+</p>
+          </div>
+          <div class="table__row">
+            <p class="table__option">Personal forwarders</p>
+            <p class="table__availability">+</p>
+            <p class="table__availability">-</p>
+          </div>
+          <div class="table__links">
+            <a href="#" class="table__link">Try now</a>
+            <a href="#" class="table__link">Order at merchant panel</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section node">
+        <div id="node" class="node__border"></div>
+        <div class="node__qr"></div>
+        <div class="node__wrapper">
+          <p class="node__info_in_bold">Вы можете открыть канал к нашей ноде,</p>
+          <p class="node__info">чтобы получить наибыстрейшие платежи и минимальные роутинг комиссии</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <nav class="footer__navbar">
+          <ul class="footer__links">
+            <li class="footer__link-item">
+              <a href="#how-it-works" class="footer__link">How it works</a>
+            </li>
+            <li class="footer__link-item">
+              <a href="#docs" class="footer__link">Docs</a>
+            </li>
+            <li class="footer__link-item">
+              <a href="#fees" class="footer__link">Payment fees</a>
+            </li>
+            <li class="footer__link-item">
+              <a href="#node" class="footer__link">Lightning node</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="footer__info">Content, выпущенного по лицензии MIT.Этот веб-сайт не использует файлы cookie и не собирает личные данные</p>
+        <p class="footer__info">Content, выпущенного по лицензии MIT.Этот веб-сайт не использует файлы cookie и не собирает личные данные</p>
+      </div>
+      <p class="footer__last-content">Content, выпущенного по лицензии MIT. Этот веб-сайт не использует файлы cookie и не собирает личные данные</p>
+    </footer>
+  </body>
+</html>

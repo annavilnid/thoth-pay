@@ -1,0 +1,16 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #273B4A;
+  min-height: 307px;
+  min-width: 61px;
+  border-radius: 0 20px 20px 0;
+  position: fixed;
+  top: 300px;
+  z-index: 10;
+}
+.contacts .contacts__logo {
+  max-width: 43px;
+}/*# sourceMappingURL=contacts.css.map */

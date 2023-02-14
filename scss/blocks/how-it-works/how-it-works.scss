@@ -1,0 +1,189 @@
+@import '../../variableStyles.scss';
+
+.how-it-works {
+    width: 100%;
+
+    .main__right-line {
+        @include indents(0 10% 0 8.2%, 0);
+        border-right: $border;
+        border-bottom: $border;
+        border-bottom-right-radius: 2.6vw;
+        position: relative;
+
+        @media screen and (max-width: 319px) {
+            border-bottom-right-radius: 8.3px;
+        }
+
+        @media screen and (min-width: 1999px) {
+            border-right: $borderMax;
+            border-bottom: $borderMax;
+            border-bottom-right-radius: 50px;
+        }
+    
+        &:before {
+            @include circleGreen();
+            top: -1.65vw;
+            right: -1.65vw;
+
+            @media screen and (max-width: 319px) {
+                top: -5.28px;
+                right: -5.28px;
+            }
+    
+            @media screen and (min-width: 1999px) {
+                top: -31.68px;
+                right: -31.68px;
+            }
+        }
+    
+        &:after {
+            @include circleGreen();
+            bottom: -1.65vw;
+            left: -1.65vw;
+
+            @media screen and (max-width: 319px) {
+                bottom: -5.28px;
+                left: -5.28px;
+            }
+    
+            @media screen and (min-width: 1999px) {
+                bottom: -31.68px;
+                left: -31.68px;
+            }
+        }
+
+        .how-it-works__title {
+            @include indents(0, 4vw 0 2.56vw 1.2vw);
+
+            @media screen and (max-width: 319px) {
+                @include indents(0, 12.8px 0 8.19px 3.84px);
+            }
+    
+            @media screen and (min-width: 1999px) {
+                @include indents(0, 76.8px 0 49.15px 23px);
+            }
+        }
+    }
+}
+
+.left-line {
+    height: 3vw;
+    min-height: 9.6px;
+    max-height: 57.6px;
+    @include indents(0 0 0 8.2%, 0);
+    border-left: $border;
+
+    @media screen and (min-width: 1999px) {
+        border-left: $borderMax;
+    }
+}
+
+.grid {
+    @include indents(0, 0 2vw 5.2vw 6vw);
+    display: grid;
+    grid-template-columns: repeat(3, 28%);
+    grid-auto-rows: auto; 
+    column-gap: 7%;
+    position: relative;
+
+    @media screen and (max-width: 319px) {
+        @include indents(0, 0 6.4px 16.64px 19.2px);
+    }
+
+    @media screen and (min-width: 1999px) {
+        @include indents(0, 0 38.4px 99.84px 115.2px);
+    }
+
+    &:before {
+        @include pseudo();
+        @include image(url('../../../images/how-it-works.svg'));
+        background-position: center center;
+        background-size: contain;
+        width: 4vw;
+        height: 4vw;
+        min-width: 3.2px;
+        min-height: 3.2px;
+        max-width: 76.8px;
+        max-height: 76.8px;
+        top: 4%;
+        left: 33.5%;
+    }
+
+    &:after {
+        @include pseudo();
+        @include image(url('../../../images/how-it-works.svg'));
+        background-position: center center;
+        background-size: contain;
+        width: 4vw;
+        height: 4vw;
+        min-width: 3.2px;
+        min-height: 3.2px;
+        max-width: 76.8px;
+        max-height: 76.8px;
+        top: 4%;
+        left: 65%;
+    }
+    
+    .grid__one {
+        @include grid(1, 2, 1, 2);
+        @include gridStep();
+    }
+    
+    .grid__five {
+        @include grid(2, 3, 1, 2);
+        @include gridStep();
+
+    }
+
+    .grid__nine {
+        @include grid(3, 4, 1, 2);
+        @include gridStep();
+    }
+
+    .grid__two {
+        @include grid(1, 2, 2, 3);
+        @include gridSubtitle();
+    }
+    
+    .grid__six {
+        @include grid(2, 3, 2, 3);
+        @include gridSubtitle();
+    }
+
+    .grid__ten {
+        @include grid(3, 4, 2, 3);
+        @include gridSubtitle();
+    }
+
+    .grid__three {
+        @include grid(1, 2, 3, 4);
+        @include gridInfo();
+    }
+    
+    .grid__seven {
+        @include grid(2, 3, 3, 4);
+        @include gridInfo();
+    }
+
+    .grid__eleven {
+        @include grid(3, 4, 3, 4);
+        @include gridInfo();
+    }
+
+    .grid__four {
+        @include grid(1, 2, 4, 5);
+        @include gridImage();
+    }
+    
+    .grid__eight {
+        @include grid(2, 3, 4, 5);
+        @include gridImage();
+    }
+
+    .grid__twelve {
+        @include grid(3, 4, 4, 5);
+        @include gridImage();
+    }
+}
+
+

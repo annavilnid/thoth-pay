@@ -1,0 +1,157 @@
+@import '../../variableStyles.scss';
+
+.fees {
+    width: 100%;
+
+    .fees__wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 38% 17% 27%;
+        column-gap: 2.5%;
+
+       .fees__title {
+            @include indents(0 0 0 8.2vw, 14vw 0 4vw 1vw);
+            border-left: $border;
+            width: 76%;
+
+            @media screen and (max-width: 319px) {
+                @include indents(0 0 0 26.24px, 44.8px 0 12.8px 3.2px);
+            }
+     
+             @media screen and (min-width: 1999px) {
+                @include indents(0 0 0 157px, 268.8px 0 76.8px 19.2px);
+                border-left: $borderMax;
+            }
+        }
+
+        .fees__proposal {
+            @include font(1.82vw, 2.57, $blackColor, center, $fontFamilyBlack);
+            @include indents( 0 0 3vw 0, 0.1vw 3vw);
+            border: 0.26vw solid $blackColor;
+            border-radius: 2.6vw;
+            align-self: end;
+
+            @media screen and (max-width: 319px) {
+                font-size: 5.8px;
+                @include indents( 0 0 9.6px 0, 0.32px 9.6px);
+                border-radius: 8.32px;
+            }
+     
+             @media screen and (min-width: 1999px) {
+                font-size: 34.9px;
+                @include indents( 0 0 57.6px 0, 3px 57.6px);
+                border-radius: 49.92px;
+                border: 4.992px solid $blackColor;
+            }
+        }
+    }
+
+    .table {
+        @include indents(0, 1.45vw 0 1.67vw 0);
+        @include flex(column, center, center);
+        box-shadow: 0px 0.21vw 2.6vw rgba(217, 217, 217, 0.46);
+        border-radius: 0 2.6vw 2.6vw 0;
+        width: 90.52%;
+
+        @media screen and (max-width: 319px) {
+            @include indents(0, 4.64px 0 5.34px 0);
+            box-shadow: 0px 0.6px 8.32px rgba(217, 217, 217, 0.46);
+            border-radius: 0 8.32px 8.32px 0;
+        }
+ 
+         @media screen and (min-width: 1999px) {
+            @include indents(0, 27.84px 0 19.2px 0);
+            box-shadow: 0px 4.03px 49.92px rgba(217, 217, 217, 0.46);
+            border-radius: 0 49.92px 49.92px 0;
+        }
+    
+        .table__row {
+            @include indents(0 0 0 5.9vw, 1vw 0 0 0);
+            @include flex(row, space-around, center);
+            border-bottom: 0.21vw solid $lightWhiteColor;
+            min-height: 4.5vw;
+
+            @media screen and (max-width: 319px) {
+                @include indents(0 0 0 18.88px, 3.2px 0 0 0);
+                min-height: 14.4px;
+            }
+
+             @media screen and (min-width: 1999px) {
+                @include indents(0 0 0 113.28px, 19.2px 0 0 0);
+                border-bottom: 4.03px solid $lightWhiteColor;
+                min-height: 86.4px;
+            }
+    
+            .table__option {
+                @include indents(0, 0);
+                @include font(1.82vw, 2.57, $blackColor, center, $fontFamilyRegular);
+                width: 26vw;
+                min-width: 83.2px;
+                max-width: 499.2px;
+
+                @media screen and (max-width: 319px) {
+                    font-size: 5.8px;
+                }
+    
+                 @media screen and (min-width: 1999px) {
+                    font-size: 35px;
+                }
+            }
+    
+            .table__percent {
+                @include indents(0, 0);
+                @include font(1.82vw, 2.57, $blackColor, center, $fontFamilyRegular);
+                width: 25vw;
+                min-width: 80px;
+                max-width: 480px;
+
+                @media screen and (max-width: 319px) {
+                    font-size: 5.8px;
+                }
+    
+                 @media screen and (min-width: 1999px) {
+                    font-size: 35px;
+                }
+            }
+    
+            .table__availability {
+                @include indents(0, 0);
+                @include font(2.6vw, 1, $darkWhiteColor, center, $fontFamilyRegular);
+                width: 25vw;
+                min-width: 80px;
+                max-width: 480px;
+
+                @media screen and (max-width: 319px) {
+                    font-size: 8.3px;
+                }
+    
+                 @media screen and (min-width: 1999px) {
+                    font-size: 50px;
+                }
+            }
+        }
+    
+        .table__links {
+            width: 56%;
+            @include indents(0, 0 0 0 42%);
+            display: grid;
+            grid-template-columns: 39% 52%;
+            column-gap: 2.5%;
+    
+            .table__link {
+                @include indents(0, 0);
+                @include font(1.82vw, 2.57, $blackColor, center, $fontFamilyRegular);
+                display: inline-block;
+                text-decoration-line: none;
+
+                @media screen and (max-width: 319px) {
+                    font-size: 5.8px;
+                }
+    
+                 @media screen and (min-width: 1999px) {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}

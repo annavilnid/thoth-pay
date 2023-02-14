@@ -1,0 +1,174 @@
+@import '../../variableStyles.scss';
+
+.about {
+    @include limits();
+    position: relative;
+
+    &:after {
+        @include pseudo();
+        @include image(url('../../../images/about-image.jpg'));
+        background-position: center right;
+        background-size: contain;
+        right: 0vw;
+        top: 3.7vw;
+        width: 43.5vw;
+        max-width: 1128px;
+        min-width: 145px;
+        height: 31vw;
+        max-height: 595px;
+        min-height: 99px;
+        overflow: hidden;
+
+        @media screen and (max-width: 319px) {
+            top: 11.84px;
+        }
+    
+        @media screen and (min-width: 1999px) {
+            top: 71px;
+        }
+    }
+
+    .about__title { 
+        @include indents(0, 3.85vw 0 1.56vw 9.2vw);
+        position: relative;
+
+        @media screen and (max-width: 319px) {
+            @include indents(0, 12.32px 0 4.99px 29.44px);
+        }
+ 
+         @media screen and (min-width: 1999px) {
+            @include indents(0, 73.92px 0 29.95px 176.64px);
+        }
+
+        &:after {
+            @include pseudo();
+            @include image(url('../../../images/about-arrow.svg'));
+            right: -8.8vw;
+            top: 4vw;
+            width: 6vw;
+            min-width: 19.2px;
+            max-width: 115.2px;
+            height: 6vw;
+            min-height: 19.2px;
+            max-height: 115.2px;
+            background-size: 6vw 6vw;
+
+            @media screen and (max-width: 319px) {
+                right: -28.16px;
+                top: 12.8px;
+                background-size: 19.2px 19.2px;
+            }
+        
+            @media screen and (min-width: 1999px) {
+                right: -168.96px;
+                top: 76.8px;
+                background-size: 115.2px 115.2px;
+            }
+        }
+    }
+
+    .about__title-span { 
+        @include font(3.65vw, 1.143, $darkGrayColor, start, $fontFamilyBlack);
+
+        @media screen and (max-width: 319px) {
+            font-size: 11.68px;
+        }
+    
+         @media screen and (min-width: 1999px) {
+            font-size: 70px;
+        }
+    }
+    
+    .about__description {
+        @include indents(0 10vw 0 7.2vw, 0);
+        position: relative;
+        border-left: $border;
+        border-bottom: $border;
+        border-bottom-left-radius: 2.6vw;
+
+        @media screen and (max-width: 319px) {
+            @include indents(0 32px 0 23.04px, 0);
+            border-bottom-left-radius: 8.32px;
+        }
+ 
+        @media screen and (min-width: 1999px) {
+            @include indents(0 192px 0 138.24px, 0);
+            border-left: $borderMax;
+            border-bottom: $borderMax;
+            border-bottom-left-radius: 50px;
+        }
+
+        &:before {
+            @include pseudo();
+            left: -0.1%;
+            top: 0;
+            width: 28%;
+            border-top: $border;
+
+            @media screen and (min-width: 1999px) {
+                border-top: $borderMax;
+            }
+        }
+        
+        .about__text {
+            width: 45%;
+            @include indents(0, 2.1vw 0 3.1vw 2.2vw);
+            @include font(1.56vw, 1.5, $blackColor, start, $fontFamilyRegular);
+
+            @media screen and (max-width: 319px) {
+                @include indents(0, 6.72px 0 9.92px 7.04px);
+                font-size: 5px;
+            }
+     
+            @media screen and (min-width: 1999px) {
+                @include indents(0, 40.32px 0 60px 42.24px);
+                font-size: 30px;
+            }
+        }
+
+        .about__button {
+            @include linkButton();
+            @include indents(0 0 0 2.19vw, 0.75vw 7vw);
+            @include font(1.56vw, 1.17, $whiteColor, center, $fontFamilyBold);
+            background: $lightGreenColor;
+
+            @media screen and (max-width: 319px) {
+                @include indents(0 0 0 7px, 2.4px 22.4px);
+                font-size: 5px;
+            }
+     
+             @media screen and (min-width: 1999px) {
+                @include indents(0 0 0 42px, 14.4px 134.4px);
+                font-size: 30px;
+            }
+    
+        }
+
+        .about__list {
+            @include indents(8.7vw 0 1vw 3.5vw, 0);
+
+            @media screen and (max-width: 319px) {
+                @include indents(27.84px 0 3.2px 11.2px, 0);
+            }
+     
+             @media screen and (min-width: 1999px) {
+                @include indents(167.04px 0 19.2px 67.2px, 0);
+            }
+            
+            .about__item {
+                @include indents(0, 0 0 0 0.5vw);
+                @include font(1.56vw, 1.83, $blackColor, start, $fontFamilyMedium);
+
+                @media screen and (max-width: 319px) {
+                    padding-left: 1.6px;
+                    font-size: 5px;
+                }
+         
+                 @media screen and (min-width: 1999px) {
+                    padding-left: 9.6px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

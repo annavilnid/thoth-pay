@@ -1,0 +1,229 @@
+.about {
+  min-width: 320px;
+  max-width: 2000px;
+  position: relative;
+}
+.about:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-color: lightGrayColor;
+  background-image: url("../../../images/about-image.jpg");
+  background-position: center right;
+  background-size: contain;
+  right: 0vw;
+  top: 3.7vw;
+  width: 43.5vw;
+  max-width: 1128px;
+  min-width: 145px;
+  height: 31vw;
+  max-height: 595px;
+  min-height: 99px;
+  overflow: hidden;
+}
+@media screen and (max-width: 319px) {
+  .about:after {
+    top: 11.84px;
+  }
+}
+@media screen and (min-width: 1999px) {
+  .about:after {
+    top: 71px;
+  }
+}
+.about .about__title {
+  margin: 0;
+  padding: 3.85vw 0 1.56vw 9.2vw;
+  position: relative;
+}
+@media screen and (max-width: 319px) {
+  .about .about__title {
+    margin: 0;
+    padding: 12.32px 0 4.99px 29.44px;
+  }
+}
+@media screen and (min-width: 1999px) {
+  .about .about__title {
+    margin: 0;
+    padding: 73.92px 0 29.95px 176.64px;
+  }
+}
+.about .about__title:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-color: lightGrayColor;
+  background-image: url("../../../images/about-arrow.svg");
+  right: -8.8vw;
+  top: 4vw;
+  width: 6vw;
+  min-width: 19.2px;
+  max-width: 115.2px;
+  height: 6vw;
+  min-height: 19.2px;
+  max-height: 115.2px;
+  background-size: 6vw 6vw;
+}
+@media screen and (max-width: 319px) {
+  .about .about__title:after {
+    right: -28.16px;
+    top: 12.8px;
+    background-size: 19.2px 19.2px;
+  }
+}
+@media screen and (min-width: 1999px) {
+  .about .about__title:after {
+    right: -168.96px;
+    top: 76.8px;
+    background-size: 115.2px 115.2px;
+  }
+}
+.about .about__title-span {
+  font-size: 3.65vw;
+  line-height: 1.143;
+  color: #273B4A;
+  text-align: start;
+  font-family: "Gramatika-Black", sans-serif;
+}
+@media screen and (max-width: 319px) {
+  .about .about__title-span {
+    font-size: 11.68px;
+  }
+}
+@media screen and (min-width: 1999px) {
+  .about .about__title-span {
+    font-size: 70px;
+  }
+}
+.about .about__description {
+  margin: 0 10vw 0 7.2vw;
+  padding: 0;
+  position: relative;
+  border-left: 0.26vw solid #273B4A;
+  border-bottom: 0.26vw solid #273B4A;
+  border-bottom-left-radius: 2.6vw;
+}
+@media screen and (max-width: 319px) {
+  .about .about__description {
+    margin: 0 32px 0 23.04px;
+    padding: 0;
+    border-bottom-left-radius: 8.32px;
+  }
+}
+@media screen and (min-width: 1999px) {
+  .about .about__description {
+    margin: 0 192px 0 138.24px;
+    padding: 0;
+    border-left: 5px solid #273B4A;
+    border-bottom: 5px solid #273B4A;
+    border-bottom-left-radius: 50px;
+  }
+}
+.about .about__description:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: -0.1%;
+  top: 0;
+  width: 28%;
+  border-top: 0.26vw solid #273B4A;
+}
+@media screen and (min-width: 1999px) {
+  .about .about__description:before {
+    border-top: 5px solid #273B4A;
+  }
+}
+.about .about__description .about__text {
+  width: 45%;
+  margin: 0;
+  padding: 2.1vw 0 3.1vw 2.2vw;
+  font-size: 1.56vw;
+  line-height: 1.5;
+  color: #000000;
+  text-align: start;
+  font-family: "Gramatika-Regular", sans-serif;
+}
+@media screen and (max-width: 319px) {
+  .about .about__description .about__text {
+    margin: 0;
+    padding: 6.72px 0 9.92px 7.04px;
+    font-size: 5px;
+  }
+}
+@media screen and (min-width: 1999px) {
+  .about .about__description .about__text {
+    margin: 0;
+    padding: 40.32px 0 60px 42.24px;
+    font-size: 30px;
+  }
+}
+.about .about__description .about__button {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: opacity 0.2s linear;
+  margin: 0 0 0 2.19vw;
+  padding: 0.75vw 7vw;
+  font-size: 1.56vw;
+  line-height: 1.17;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Gramatika-Bold", sans-serif;
+  background: #5DE9B6;
+}
+.about .about__description .about__button:hover {
+  opacity: 0.6;
+}
+@media screen and (max-width: 319px) {
+  .about .about__description .about__button {
+    margin: 0 0 0 7px;
+    padding: 2.4px 22.4px;
+    font-size: 5px;
+  }
+}
+@media screen and (min-width: 1999px) {
+  .about .about__description .about__button {
+    margin: 0 0 0 42px;
+    padding: 14.4px 134.4px;
+    font-size: 30px;
+  }
+}
+.about .about__description .about__list {
+  margin: 8.7vw 0 1vw 3.5vw;
+  padding: 0;
+}
+@media screen and (max-width: 319px) {
+  .about .about__description .about__list {
+    margin: 27.84px 0 3.2px 11.2px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1999px) {
+  .about .about__description .about__list {
+    margin: 167.04px 0 19.2px 67.2px;
+    padding: 0;
+  }
+}
+.about .about__description .about__list .about__item {
+  margin: 0;
+  padding: 0 0 0 0.5vw;
+  font-size: 1.56vw;
+  line-height: 1.83;
+  color: #000000;
+  text-align: start;
+  font-family: "Gramatika-Medium", sans-serif;
+}
+@media screen and (max-width: 319px) {
+  .about .about__description .about__list .about__item {
+    padding-left: 1.6px;
+    font-size: 5px;
+  }
+}
+@media screen and (min-width: 1999px) {
+  .about .about__description .about__list .about__item {
+    padding-left: 9.6px;
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=about.css.map */

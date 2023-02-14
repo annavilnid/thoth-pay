@@ -1,0 +1,158 @@
+@import '../../variableStyles.scss';
+
+.node {
+    @include indents(0 auto, 0 0 1.1vw 0);
+    @include limits();
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+
+    @media screen and (max-width: 319px) {
+        @include indents(0 auto, 0 0 3.52px 0);
+    }
+
+     @media screen and (min-width: 1999px) {
+        @include indents(0 auto, 0 0 21.12px 0);
+    }
+
+    &:before {
+        right: 7.03vw;
+        top: 14.90vw;
+        @include circleGreen();
+
+        @media screen and (max-width: 319px) {
+            right: 22.49px;
+            top: 47.68px;
+        }
+    
+         @media screen and (min-width: 1999px) {
+            right: 135px;
+            top: 286px;
+        }
+    }
+
+    &:after {
+        @include pseudo();
+        @include image(url('../../../images/about-arrow.svg'));
+        right: 4.95vw;
+        top: 12.5vw;
+        width: 6%;
+        min-width: 19.2px;
+        max-width: 115.2px;
+        height: 6vw;
+        min-height: 19.2px;
+        max-height: 115.2px;
+        background-size: 6vw 6vw;
+        rotate: 180deg;
+
+        @media screen and (max-width: 319px) {
+            right: 15.84px;
+            top: 40px;
+            background-size: 19.2px 19.2px;
+        }
+    
+         @media screen and (min-width: 1999px) {
+            right: 95px;
+            top: 240px;
+            background-size: 115.2px 115.2px;
+        }
+    }
+
+    .node__border {
+        position: relative;
+        @include indents(0 0 5.9vw 8.2vw, 0);
+        height: 6.8vw;
+        min-height: 22px;
+        max-height: 130.5px;
+        width: 91.8%;
+        border-left: $border;
+        border-bottom: $border;
+
+        @media screen and (max-width: 319px) {
+            @include indents(0 0 19px 26.24px, 0);
+        }
+
+        @media screen and (min-width: 1999px) {
+            @include indents(0 0 113.3px 157.5px, 0);
+            border-left: $borderMax;
+            border-bottom: $borderMax;
+        }
+
+        &:after {
+            @include circleGreen();
+            bottom: -1.65vw;
+            left: -1.65vw;
+
+            @media screen and (max-width: 319px) {
+                bottom: 5.28px;
+                left: 5.28px;
+            }
+    
+            @media screen and (min-width: 1999px) {
+                bottom: -31.68px;
+                left: -31.68px;
+            }
+        }
+    }
+
+    .node__qr {
+        height: 31.4vw;
+        width: 43.44vw;
+        max-width: 837px;
+        min-width: 139.5px;
+        max-height: 638px;
+        min-height: 102px;
+        border-top: $border;
+        border-right: $border; 
+        border-bottom: $border;
+        border-radius: 0 5% 5% 0;
+        box-shadow: 0 0 0 0.9vw $whiteColor, 0 0 0 1.1vw $darkGrayColor;
+        @include image(url(./../../../images/qr.svg));
+        background-position: center right;
+        background-size: contain;
+
+        @media screen and (min-width: 1999px) {
+            border-top: $borderMax;
+            border-right: $borderMax; 
+            border-bottom: $borderMax;
+            box-shadow: 0 0 0 16px $whiteColor, 0 0 0 21px $darkGrayColor;
+        }
+    }
+
+    .node__wrapper {
+        @include indents(0 9.48% 0 0, 0);
+        width: 43%;
+        max-width: 837px;
+
+        @media screen and (max-width: 1370px) {
+            width: 40%;
+        }
+
+        .node__info_in_bold {
+            @include indents(0, 0);
+            @include font(4.17vw, 1.11, $darkGrayColor, left, $fontFamilyBlack);
+
+            @media screen and (max-width: 319px) {
+                font-size: 13.34px;
+            }
+
+            @media screen and (min-width: 1999px) {
+                font-size: 90px;
+            }
+        }
+
+        .node__info {
+            @include indents(0, 0);
+            @include font(2.34vw, 1.11, $darkGrayColor, left, $fontFamilyMedium);
+
+            @media screen and (max-width: 319px) {
+                font-size: 11.59px;
+            }
+
+            @media screen and (min-width: 1999px) {
+                font-size: 45px;
+            }
+        }
+    }
+}

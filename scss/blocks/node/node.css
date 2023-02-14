@@ -1,0 +1,211 @@
+.node {
+  margin: 0 auto;
+  padding: 0 0 1.1vw 0;
+  min-width: 320px;
+  max-width: 2000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+}
+@media screen and (max-width: 319px) {
+  .node {
+    margin: 0 auto;
+    padding: 0 0 3.52px 0;
+  }
+}
+@media screen and (min-width: 1999px) {
+  .node {
+    margin: 0 auto;
+    padding: 0 0 21.12px 0;
+  }
+}
+.node:before {
+  right: 7.03vw;
+  top: 14.9vw;
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-color: #5DE9B6;
+  width: 3.3vw;
+  min-width: 10.56px;
+  max-width: 63.36px;
+  height: 3.3vw;
+  min-height: 10.56px;
+  max-height: 63.36px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 319px) {
+  .node:before {
+    right: 22.49px;
+    top: 47.68px;
+  }
+}
+@media screen and (min-width: 1999px) {
+  .node:before {
+    right: 135px;
+    top: 286px;
+  }
+}
+.node:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-color: lightGrayColor;
+  background-image: url("../../../images/about-arrow.svg");
+  right: 4.95vw;
+  top: 12.5vw;
+  width: 6%;
+  min-width: 19.2px;
+  max-width: 115.2px;
+  height: 6vw;
+  min-height: 19.2px;
+  max-height: 115.2px;
+  background-size: 6vw 6vw;
+  rotate: 180deg;
+}
+@media screen and (max-width: 319px) {
+  .node:after {
+    right: 15.84px;
+    top: 40px;
+    background-size: 19.2px 19.2px;
+  }
+}
+@media screen and (min-width: 1999px) {
+  .node:after {
+    right: 95px;
+    top: 240px;
+    background-size: 115.2px 115.2px;
+  }
+}
+.node .node__border {
+  position: relative;
+  margin: 0 0 5.9vw 8.2vw;
+  padding: 0;
+  height: 6.8vw;
+  min-height: 22px;
+  max-height: 130.5px;
+  width: 91.8%;
+  border-left: 0.26vw solid #273B4A;
+  border-bottom: 0.26vw solid #273B4A;
+}
+@media screen and (max-width: 319px) {
+  .node .node__border {
+    margin: 0 0 19px 26.24px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1999px) {
+  .node .node__border {
+    margin: 0 0 113.3px 157.5px;
+    padding: 0;
+    border-left: 5px solid #273B4A;
+    border-bottom: 5px solid #273B4A;
+  }
+}
+.node .node__border:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-color: #5DE9B6;
+  width: 3.3vw;
+  min-width: 10.56px;
+  max-width: 63.36px;
+  height: 3.3vw;
+  min-height: 10.56px;
+  max-height: 63.36px;
+  border-radius: 50%;
+  bottom: -1.65vw;
+  left: -1.65vw;
+}
+@media screen and (max-width: 319px) {
+  .node .node__border:after {
+    bottom: 5.28px;
+    left: 5.28px;
+  }
+}
+@media screen and (min-width: 1999px) {
+  .node .node__border:after {
+    bottom: -31.68px;
+    left: -31.68px;
+  }
+}
+.node .node__qr {
+  height: 31.4vw;
+  width: 43.44vw;
+  max-width: 837px;
+  min-width: 139.5px;
+  max-height: 638px;
+  min-height: 102px;
+  border-top: 0.26vw solid #273B4A;
+  border-right: 0.26vw solid #273B4A;
+  border-bottom: 0.26vw solid #273B4A;
+  border-radius: 0 5% 5% 0;
+  box-shadow: 0 0 0 0.9vw #FFFFFF, 0 0 0 1.1vw #273B4A;
+  background-repeat: no-repeat;
+  background-color: lightGrayColor;
+  background-image: url(./../../../images/qr.svg);
+  background-position: center right;
+  background-size: contain;
+}
+@media screen and (min-width: 1999px) {
+  .node .node__qr {
+    border-top: 5px solid #273B4A;
+    border-right: 5px solid #273B4A;
+    border-bottom: 5px solid #273B4A;
+    box-shadow: 0 0 0 16px #FFFFFF, 0 0 0 21px #273B4A;
+  }
+}
+.node .node__wrapper {
+  margin: 0 9.48% 0 0;
+  padding: 0;
+  width: 43%;
+  max-width: 837px;
+}
+@media screen and (max-width: 1370px) {
+  .node .node__wrapper {
+    width: 40%;
+  }
+}
+.node .node__wrapper .node__info_in_bold {
+  margin: 0;
+  padding: 0;
+  font-size: 4.17vw;
+  line-height: 1.11;
+  color: #273B4A;
+  text-align: left;
+  font-family: "Gramatika-Black", sans-serif;
+}
+@media screen and (max-width: 319px) {
+  .node .node__wrapper .node__info_in_bold {
+    font-size: 13.34px;
+  }
+}
+@media screen and (min-width: 1999px) {
+  .node .node__wrapper .node__info_in_bold {
+    font-size: 90px;
+  }
+}
+.node .node__wrapper .node__info {
+  margin: 0;
+  padding: 0;
+  font-size: 2.34vw;
+  line-height: 1.11;
+  color: #273B4A;
+  text-align: left;
+  font-family: "Gramatika-Medium", sans-serif;
+}
+@media screen and (max-width: 319px) {
+  .node .node__wrapper .node__info {
+    font-size: 11.59px;
+  }
+}
+@media screen and (min-width: 1999px) {
+  .node .node__wrapper .node__info {
+    font-size: 45px;
+  }
+}/*# sourceMappingURL=node.css.map */

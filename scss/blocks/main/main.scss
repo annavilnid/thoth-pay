@@ -1,0 +1,7 @@
+@import '../../variableStyles.scss';
+
+.main__title {
+    @include indents(0,0);
+    color: $darkGrayColor;
+    text-align: center;
+}

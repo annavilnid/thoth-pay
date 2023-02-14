@@ -1,0 +1,16 @@
+@import '../../variableStyles.scss';
+
+.contacts {
+    @include flex(column, space-around, center);
+    background-color: $darkGrayColor;
+    min-height: 307px;
+    min-width: 61px;
+    border-radius: 0 20px 20px 0;
+    position: fixed;
+    top: 300px;
+    z-index: 10;
+    
+    .contacts__logo {
+        max-width: 43px;
+    }
+}
