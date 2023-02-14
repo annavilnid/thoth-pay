@@ -15,84 +15,84 @@
         min-height: 151px;
     }
         
-        .header__logo {
-            @include indents(1.7vw 10.5vw 0 5.6vw,0);
-            width: 7.3vw;
-            height: 5vw;
-            min-width: 23.36px;
-            min-height: 16px;
-            max-width: 140.16px;
-            max-height: 96px;
-            align-self: flex-start;
+    .header__logo {
+        @include indents(1.7vw 10.5vw 0 5.6vw,0);
+        width: 7.3vw;
+        height: 5vw;
+        min-width: 23.36px;
+        min-height: 16px;
+        max-width: 140.16px;
+        max-height: 96px;
+        align-self: flex-start;
 
-            @media screen and (max-width: 319px) {
-                @include indents(5.4px 33.6px 0 17.9px,0);
-            }
+        @media screen and (max-width: 319px) {
+             @include indents(5.4px 33.6px 0 17.9px,0);
+        }
     
-            @media screen and (min-width: 1999px) {
-                @include indents(32.6px 201.6px 0 107.5px,0);
-            }
+        @media screen and (min-width: 1999px) {
+            @include indents(32.6px 201.6px 0 107.5px,0);
+        }
+    }
+
+    .header__button {
+        @include linkButton();
+        @include indents(1.2vw 8vw 0 6vw, 0.75vw 3.2vw);
+        @include font(1.56vw, 1.17, $whiteColor, center, $fontFamilyBold);
+        background: $lightGreenColor;
+
+        @media screen and (max-width: 319px) {
+            font-size: 5px;
+            @include indents(3px 25.5px 0 19.2px, 2.4px 10.14px);
+        }
+    
+        @media screen and (min-width: 1999px) {
+            font-size: 30px;
+            @include indents(21.12px 153.6px 0 115.2px, 14.4px 61.4px);
+        }
+    }
+
+    .header__navbar {
+        @include indents(1.2vw 0 0 0, 0);
+        @include flex(row, center, center);
+
+        @media screen and (max-width: 319px) {
+            margin-top: 3.8px;
+        }
+    
+        @media screen and (min-width: 1999px) {
+            margin-top: 23.04px;
         }
 
-        .header__button {
-            @include linkButton();
-            @include indents(1.2vw 8vw 0 6vw, 0.75vw 3.2vw);
-            @include font(1.56vw, 1.17, $whiteColor, center, $fontFamilyBold);
-            background: $lightGreenColor;
+        .header__links {
+            @include indents(0,0);
+            @include flex(row, space-between, center);
+            flex-wrap: wrap;
+            width: 44.5vw;
+            max-width: 854.5px;
+            min-width: 142.4px;
+            list-style: none;
 
-            @media screen and (max-width: 319px) {
-                font-size: 5px;
-                @include indents(3px 25.5px 0 19.2px, 2.4px 10.14px);
-            }
-    
-            @media screen and (min-width: 1999px) {
-                font-size: 30px;
-                @include indents(21.12px 153.6px 0 115.2px, 14.4px 61.4px);
-            }
-        }
-
-        .header__navbar {
-            @include indents(1.2vw 0 0 0, 0);
-            @include flex(row, center, center);
-
-            @media screen and (max-width: 319px) {
-                margin-top: 3.8px;
-            }
-    
-            @media screen and (min-width: 1999px) {
-                margin-top: 23.04px;
-            }
-
-            .header__links {
+            .header__link-item {
                 @include indents(0,0);
-                @include flex(row, space-between, center);
-                flex-wrap: wrap;
-                width: 44.5vw;
-                max-width: 854.5px;
-                min-width: 142.4px;
-                list-style: none;
+                @include flex(column, center, stretch);
 
-                .header__link-item {
-                    @include indents(0,0);
-                    @include flex(column, center, stretch);
-
-                    .header__link {
-                        @include indents(0,0 1vw);
-                        @include font(1.56vw, 1.17, $lightGrayColor, center, $fontFamilyRegular);
-                        text-decoration-line: none;
-                        @include hover();
+                .header__link {
+                    @include indents(0,0 1vw);
+                    @include font(1.56vw, 1.17, $lightGrayColor, center, $fontFamilyRegular);
+                    text-decoration-line: none;
+                    @include hover();
                         
-                        @media screen and (max-width: 319px) {
-                            font-size: 5px;
-                            @include indents(0,0 3.2px);
-                        }
+                    @media screen and (max-width: 319px) {
+                        font-size: 5px;
+                        @include indents(0,0 3.2px);
+                    }
     
-                        @media screen and (min-width: 1999px) {
-                            font-size: 30px;
-                            @include indents(0,0 19.2px);
-                        }
+                    @media screen and (min-width: 1999px) {
+                        font-size: 30px;
+                        @include indents(0,0 19.2px);
                     }
                 }
             }
         }
-    }
+    } 
+}

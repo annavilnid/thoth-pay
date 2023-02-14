@@ -184,6 +184,7 @@
        column-gap: 2.5%;
 }
 .fees .table .table__links .table__link {
+  transition: opacity 0.2s linear;
   margin: 0;
   padding: 0;
   font-size: 1.82vw;
@@ -194,6 +195,9 @@
   display: inline-block;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
+}
+.fees .table .table__links .table__link:hover {
+  opacity: 0.6;
 }
 @media screen and (max-width: 319px) {
   .fees .table .table__links .table__link {

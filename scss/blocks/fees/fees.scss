@@ -139,6 +139,7 @@
             column-gap: 2.5%;
     
             .table__link {
+                @include hover();
                 @include indents(0, 0);
                 @include font(1.82vw, 2.57, $blackColor, center, $fontFamilyRegular);
                 display: inline-block;

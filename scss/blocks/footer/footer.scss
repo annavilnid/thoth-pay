@@ -5,6 +5,7 @@
     @include limits();
     @include flex(column, center, stretch);
     background: linear-gradient(180deg, rgba(219, 255, 229, 0) 0%, rgba(93, 233, 182, 0.81) 48.44%, #3CC1B3 100%);
+    
     @media screen and (max-width: 319px) {
         @include indents(0, 39px 0 13.4vw 0);
     }
