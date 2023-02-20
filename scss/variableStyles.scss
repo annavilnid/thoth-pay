@@ -4,6 +4,7 @@ $darkGrayColor: #273B4A;
 $darkWhiteColor: #D9D9D9;
 $lightWhiteColor: #EEEEEE;
 $lightGreenColor: #5DE9B6;
+$darkGreenColor:#3CC1B3;
 $blackColor: #000000;
 
 $fontFamilyBlack: 'Gramatika-Black', sans-serif;
@@ -16,6 +17,8 @@ $borderHeader: 0.21vw solid $darkGrayColor;
 $border: 0.26vw solid $darkGrayColor;
 
 $borderMax: 5px solid $darkGrayColor;
+
+$borderMin: 3px solid $darkGrayColor;
 
 @mixin font($fontSize, $lineHeight, $color, $textAlign, $fontFamily) {
     font-size: $fontSize;
@@ -39,7 +42,6 @@ $borderMax: 5px solid $darkGrayColor;
 
 @mixin image($backgroundImage) {
     background-repeat: no-repeat;
-    background-color: lightGrayColor;
     background-image: $backgroundImage;
 }
 
@@ -74,12 +76,26 @@ $borderMax: 5px solid $darkGrayColor;
     @include pseudo();
     background-color: $lightGreenColor;
     width: 3.3vw;
-    min-width: 10.56px;
     max-width: 63.36px;
     height: 3.3vw;
-    min-height: 10.56px;
     max-height: 63.36px;
     border-radius: 50%;
+}
+
+@mixin circleGreenMax() {
+    @include circleGreen();
+    min-width: 18.6px;
+    min-height: 18.6px;
+    width: 5.8vw;
+    height: 5.8vw;
+}
+
+@mixin circleGreenSuperMax() {
+    @include circleGreen();
+    min-width: 25.6px;
+    min-height: 25.6px;
+    width: 8vw;
+    height: 8vw;
 }
 
 @mixin grid($columnStart, $columnEnd, $rowStart, $rowEnd) {
@@ -95,67 +111,77 @@ $borderMax: 5px solid $darkGrayColor;
     @include font(4.2vw, 1.125, $lightGreenColor, start, $fontFamilyBlack);
     @include flex(row, center, center);
     border-radius: 50%;
-    border: 0.36vw solid $lightGreenColor;
+    border: 7px solid $lightGreenColor;
     width: 7.97vw;
     height: 7.97vw;
-    min-width: 25.5px;
-    min-height: 25.5px;
     max-width: 153px;
     max-height: 153px;
 
-    @media screen and (max-width: 319px) {
-        font-size: 13.44px;
-    }
-
     @media screen and (min-width: 1999px) {
         font-size: 80.64px;
-        border: 7px solid $lightGreenColor;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-top: 10vw;
+        @include font(16.4vw, 1.29, $lightGreenColor, start, $fontFamilyBlack);
+        width: 26.6vw;
+        height: 26.6vw;
+        min-width: 85.12px;
+        min-height: 85.12px;
+    }
+
+    @media screen and (max-width: 319px) {
+        margin-top: 32px;
+        font-size: 52px;
     }
 }
 
 @mixin gridSubtitle() {
     @include indents(2.5vw 0 1vw 0, 0);
     @include font(1.82vw, 1.571, $darkGrayColor, center, $fontFamilyBlack);
-  
-    @media screen and (max-width: 319px) {
-        @include indents(8px 0 3.2px 0, 0);
-        font-size: 5.82px;
-    }
 
     @media screen and (min-width: 1999px) {
         @include indents(48px 0 19.2px 0, 0);
         font-size: 34.94px;
     }
+
+    @media screen and (max-width: 767px) {
+        @include indents(3vw 0 1vw 0, 0);
+        font-size: 5.8vw;
+        line-height: 2,2;
+    }
+
+    @media screen and (max-width: 319px) {
+        @include indents(9.6px 0 3.2px 0, 0);
+        font-size: 18px;
+    }
 }
 
 @mixin gridInfo() {
-    @include indents(0, 0 0 5% 0);
+    @include indents(0, 0 0 8% 0);
     @include font(1.5vw, 1.56, $darkGrayColor, center, $fontFamilyMedium); 
-
-    @media screen and (max-width: 319px) {
-        font-size: 5px;
-        @include indents(0, 0 0 3.2px 0);
-    }
 
     @media screen and (min-width: 1999px) {
       font-size: 30px;
       @include indents(0, 0 0 19.2px 0);
     }  
+
+    @media screen and (max-width: 767px) {
+        @include indents(0 0 8vw 0, 0);
+        font-size: 4.2vw;
+        line-height: 1.39;
+        width: 80%;
+    }
+
+    @media screen and (max-width: 319px) {
+        font-size: 13.5px;
+        @include indents(0 0 25.5px 0, 0);
+    }
 }
 
 @mixin gridImage() {
-    height: 21.4vw;
-    min-height: 68.48px;
-    max-height: 411px;
-    width: 100%;
-    background-color: $darkWhiteColor;
-    border-radius: 1.04vw;
-
-    @media screen and (max-width: 319px) {
-      border-radius: 3.3px;
-    }
-
-    @media screen and (min-width: 1999px) {
-    border-radius: 19.97px;
-    }
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0px 4px 30px rgba(217, 217, 217, 0.43);
+    background-color: $whiteColor;
 }

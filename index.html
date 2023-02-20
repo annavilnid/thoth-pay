@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
   <!-- Уточнить! -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./scss/blocks/index/index.css">
+    <link href="./scss/blocks/index/index.css" rel="stylesheet" type="text/css">
     <title><Test></title> 
     <!-- Уточнить! -->
   </head>
-  <body class="page">
+  <body class="body">
     <header class="header">
       <img class="header__logo" src="./images/main-logo.svg" alt="logo">
       <nav class="header__navbar">
@@ -27,19 +27,25 @@
           </li>
         </ul>
       </nav>
-      <a href="#" class="header__button button" target="_blank">Merchant panel</a>
+      <!-- <a href="#" class="header__button button" target="_blank">Merchant panel</a> -->
+      <a href="#" class="header__button button" target="_blank">Mer</a>
+      <div class="header__language">
+        <p class="header__language-text">En</p>
+        <button type="button" class="header__language-button"></button>
+      </div>
+      <button type="button" class="header__nav-button"></button>
     </header>
 
     <main class="main">
-      <nav class="contacts">
+      <!-- <nav class="contacts">
         <a href="#" class="contacts__link" target="_blank"><img class="contacts__logo" src="./images/telegram.svg" alt="telegram logo"></a>
         <a href="#" class="contacts__link" target="_blank"><img class="contacts__logo" src="./images/twitter.svg" alt="twitter logo"></a>
         <a href="#" class="contacts__link" target="_blank"><img class="contacts__logo" src="./images/facebook.svg" alt="facebook logo"></a>
         <a href="#" class="contacts__link" target="_blank"><img class="contacts__logo" src="./images/email.svg" alt="email logo"></a>
-      </nav>
+      </nav> -->
 
       <section class="main__about about">
-        <h1 class="about__title title">Receive<span class="about__title-span"> payments in BTC, stablecoins for your business</span></h1>
+        <h1 class="about__title title">Receive<span class="about__title-span"> payments<br> in BTC, stablecoins for your business</span></h1>
         <div class="about__description">
           <p class="about__text">Thothpay - очень клевое приложение. Просто невъебенное. Похвалите еще приложение. Ну что я еще могу сказать: Я люблю Tothpay</p>
           <a href="#" class="about__button button" target="_blank">Try now</a>
@@ -61,15 +67,25 @@
             <div class="grid__one">1</div>
             <h3 class="grid__two">Отправить счет</h3>
             <p class="grid__three">Мерчант выставляет счёт invoice в своей локальной валюте</p>
-            <div class="grid__four"></div>
+            <div class="grid__four"><img class="grid__card" src="./images/step-one-card.jpg" alt=""></div> <!-- <a Написать название -->
             <div class="grid__five">2</div>
             <h3 class="grid__six">Оплата</h3>
             <p class="grid__seven">Пользователь оплачивает в той валюте, в которой ему удобно. Все сложности с переплатами и недоплатами мы берём на себя.</p>
-            <div class="grid__eight"></div>
+            <div class="grid__eight">
+                <img class="grid__card" src="./images/step-two-image.jpg" alt=""> <!-- <a Написать название -->
+                <div class="grid__link-wrapper">
+                  <a href="#" class="grid__link" target="_blank"><img class="grid__link-image" src="./images/step-two-icon-one.svg" alt=""></a><!-- <a Написать название -->
+                  <p class="grid__link-text">copy address/invoice copy address/invoice copy address/invoice copy address/invoice</p>
+                </div>
+                <div class="grid__link-wrapper">
+                  <a href="#" class="grid__link" target="_blank"><img class="grid__link-image" src="./images/step-two-icon-two.svg" alt=""></a><!-- <a Написать название -->
+                  <p class="grid__link-text">open in wallet</p>
+                </div>
+            </div>
             <div class="grid__nine">3</div>
             <h3 class="grid__ten">Передача</h3>
             <p class="grid__eleven">Конвертация и вывод, мерчант в любой момент выводит свои средства на свой кошелёк в той валюте, в которой ему удобна.</p>
-            <div class="grid__twelve"></div>
+            <div class="grid__twelve"><img class="grid__card" src="./images/step-three-image.jpeg" alt=""></div> <!-- <a Написать название -->
           </div>
         </div>
       </section>
@@ -124,14 +140,14 @@
         </div>
       </section>
 
-      <section class="main__section node">
+      <div class="main__section node">
         <div id="node" class="node__border"></div>
         <div class="node__qr"></div>
         <div class="node__wrapper">
           <p class="node__info_in_bold">Вы можете открыть канал к нашей ноде,</p>
           <p class="node__info">чтобы получить наибыстрейшие платежи и минимальные роутинг комиссии</p>
         </div>
-      </section>
+      </div>
     </main>
 
     <footer class="footer">

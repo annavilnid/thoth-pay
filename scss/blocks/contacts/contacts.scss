@@ -6,25 +6,23 @@
     background-color: $darkGrayColor;
     min-height: 16vw;
     min-width: 2.9vw;;
-    border-radius: 0 1.04vw 1.04vw 0;
+    border-radius: 0 20px 20px 0;
     position: fixed;
     top: 22.40vw;
     z-index: 10;
-
-    @media screen and (max-width: 319px) {
-        padding-left: 0.1px;
-        min-height: 115.6px;
-        min-width: 17.19px;
-        border-radius: 0 6.25px 6.25px 0;
-        top: 134px;
-    }
 
     @media screen and (min-width: 1999px) {
         padding-left: 6px;
         min-height: 307px;
         min-width: 55px;
-        border-radius: 0 20px 20px 0;
         top: 430px;
+    }
+
+    @media screen and (max-width: 319px) {
+        padding-left: 0.1px;
+        min-height: 115.6px;
+        min-width: 17.19px;
+        top: 134px;
     }
 
     .contacts__link {

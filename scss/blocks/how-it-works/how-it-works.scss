@@ -10,29 +10,38 @@
         border-bottom-right-radius: 2.6vw;
         position: relative;
 
-        @media screen and (max-width: 319px) {
-            border-bottom-right-radius: 8.3px;
-        }
-
         @media screen and (min-width: 1999px) {
             border-right: $borderMax;
             border-bottom: $borderMax;
             border-bottom-right-radius: 50px;
+        }
+
+        @media screen and (max-width: 767px) {
+            @include indents(0 6% 0 7%, 0);
+            border-right: $borderMin;
+            border-bottom: none;
+            border-bottom-right-radius: 0;
         }
     
         &:before {
             @include circleGreen();
             top: -1.65vw;
             right: -1.65vw;
-
-            @media screen and (max-width: 319px) {
-                top: -5.28px;
-                right: -5.28px;
-            }
     
             @media screen and (min-width: 1999px) {
                 top: -31.68px;
                 right: -31.68px;
+            }
+
+            @media screen and (max-width: 767px) {
+                @include circleGreenMax();
+                top: -3vw;
+                right: -3vw;
+            }
+
+            @media screen and (max-width: 319px) {
+                top: -5.28px;
+                right: -5.28px;
             }
         }
     
@@ -40,27 +49,38 @@
             @include circleGreen();
             bottom: -1.65vw;
             left: -1.65vw;
-
-            @media screen and (max-width: 319px) {
-                bottom: -5.28px;
-                left: -5.28px;
-            }
     
             @media screen and (min-width: 1999px) {
-                bottom: -31.68px;
-                left: -31.68px;
+                bottom: -9.6px;
+                left: -9.6px;
+            }
+
+            @media screen and (max-width: 767px) {
+                @include circleGreenMax();
+                bottom: -3vw;
+                right: -3vw;
+                left: auto;
+            }
+
+            @media screen and (max-width: 319px) {
+                bottom: -9.6px;
+                right: -9.6px;
             }
         }
 
         .how-it-works__title {
             @include indents(0, 4vw 0 2.56vw 1.2vw);
-
-            @media screen and (max-width: 319px) {
-                @include indents(0, 12.8px 0 8.19px 3.84px);
-            }
     
             @media screen and (min-width: 1999px) {
                 @include indents(0, 76.8px 0 49.15px 23px);
+            }
+
+            @media screen and (max-width: 767px) {
+                @include indents(0, 7.5vw 0 0 1vw);
+            }
+
+            @media screen and (max-width: 319px) {
+                @include indents(0, 24px 0 0 3.2px);
             }
         }
     }
@@ -76,27 +96,43 @@
     @media screen and (min-width: 1999px) {
         border-left: $borderMax;
     }
+
+    @media screen and (max-width: 767px) {
+        border-left: $borderMin;
+        border-top: $borderMin;
+        @include indents(0 6% 0 7%, 16vw 0 0 0);
+        border-top-left-radius: 20px;
+    }
+
+    @media screen and (max-width: 319px) {
+        padding-top: 52px;
+    }
 }
 
 .grid {
-    @include indents(0, 0 2vw 5.2vw 6vw);
+    @include indents(0, 0 2vw 1.5vw 6vw);
     display: grid;
     grid-template-columns: repeat(3, 28%);
     grid-auto-rows: auto; 
     column-gap: 7%;
     position: relative;
 
-    @media screen and (max-width: 319px) {
-        @include indents(0, 0 6.4px 16.64px 19.2px);
+    @media screen and (min-width: 1999px) {
+        @include indents(0, 0 38.4px 28.8px 115.2px);
     }
 
-    @media screen and (min-width: 1999px) {
-        @include indents(0, 0 38.4px 99.84px 115.2px);
+    @media screen and (max-width: 767px) {
+        @include flex(column, center, center);
+        @include indents(0, 0 0 15vw 0);
+    }
+
+    @media screen and (max-width: 319px) {
+        @include indents(0, 0 0 48px 0);
     }
 
     &:before {
         @include pseudo();
-        @include image(url('../../../images/how-it-works.svg'));
+        @include image(url('../../../images/arrow-small.svg'));
         background-position: center center;
         background-size: contain;
         width: 4vw;
@@ -107,11 +143,15 @@
         max-height: 76.8px;
         top: 4%;
         left: 33.5%;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
     }
 
     &:after {
         @include pseudo();
-        @include image(url('../../../images/how-it-works.svg'));
+        @include image(url('../../../images/arrow-small.svg'));
         background-position: center center;
         background-size: contain;
         width: 4vw;
@@ -122,6 +162,10 @@
         max-height: 76.8px;
         top: 4%;
         left: 65%;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
     }
     
     .grid__one {
@@ -172,17 +216,171 @@
 
     .grid__four {
         @include grid(1, 2, 4, 5);
-        @include gridImage();
+        align-self: start;
+        @include flex(column, center, center);
+        
+
+        @media screen and (max-width: 767px) {
+            @include flex(column, center, center)
+
+        }
+
+        .grid__card {
+            @include gridImage();
+            width: 100%;
+            padding: 1.56vw;
+
+            @media screen and (min-width: 1999px) {
+                padding: 30px;
+            }
+
+            @media screen and (max-width: 767px) {
+                width: 96%;
+                margin: 0 auto;
+                padding: 5.4vw;
+            }
+
+            @media screen and (max-width: 319px) {
+                padding: 17px;
+            }
+        }
     }
     
     .grid__eight {
         @include grid(2, 3, 4, 5);
-        @include gridImage();
+        @include flex(column, center, center);
+        align-self: start;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+        
+        .grid__card {
+            width: 80%;
+            @include gridImage();
+            @include indents(0 0 0.6vw 0, 0.36vw 2.34vw 2.76vw 2.34vw);
+
+            @media screen and (min-width: 1999px) {
+                width: 100%;
+                @include indents(0 0 11.5px 0, 7px 45px 53px 45px);
+            }
+
+            @media screen and (max-width: 767px) {
+                @include indents(0 0 2.4vw 0, 4vw 14vw 14vw 14vw);
+                width: 96%;
+            }
+
+            @media screen and (max-width: 319px) {
+                @include indents(0 0 7.7px 0, 12.8px 44.8px 44.8px 44.8px);
+            }
+        }
+
+        .grid__link-wrapper {
+            @include indents(0 auto 0.9vw auto, 0);
+            @include flex(column, center, center);
+            min-width: 80%;
+            position: relative;
+
+            &:last-of-type {
+
+                @media screen and (max-width: 767px) {
+                    @include indents(3.7vw auto 0 auto, 0);
+                }
+
+                @media screen and (max-width: 319px) {
+                    @include indents(16px auto 0 auto, 0);
+                }
+            }
+
+            @media screen and (min-width: 1999px) {
+                @include indents(0 auto 17.28px auto, 0);
+            }
+
+            @media screen and (max-width: 767px) {
+                width: 96%;
+                @include indents(0 auto, 0);
+            }
+
+            
+            .grid__link {
+                @include hover();
+                position: absolute;
+                top: calc(50% - 1.16vw);
+                left: -1.5%;
+                width: 3vw;
+                max-width: 57.6px;
+
+                .grid__link-image {
+                    width: 100%;
+                }
+
+                @media screen and (min-width: 1999px) {
+                    top: calc(50% - 24px);
+                }
+
+                @media screen and (max-width: 767px) {
+                    top: calc(50% - 6vw);
+                    width: 13.4vw;
+                    min-width: 42.8px;
+                }
+
+                @media screen and (max-width: 319px) {
+                    top: calc(50% - 19.2px);
+                }
+            }
+
+            .grid__link-text {
+                width: 100%;
+                @include gridImage();
+                @include indents(0, 0.75vw 1vw 0.75vw 3.1vw);
+                @include font(1.2vw, 1.17, $darkGreenColor, center, $fontFamilyRegular);
+    
+                @media screen and (min-width: 1999px) {
+                    @include indents(0, 14.4px 19.2px 14.4px 59.5px);
+                    font-size: 23.04px;
+                }
+
+                @media screen and (max-width: 767px) {
+                    @include indents(0, 2vw 2vw 2vw 14.2vw);
+                    font-size: 5.4vw;
+                    line-height: 1.17;
+                    width: 100%;
+                }
+
+                @media screen and (max-width: 319px) {
+                    @include indents(0, 6.4px 6.4px 6.4px 45.4px);
+                    font-size: 12px;
+                }
+            }
+        }
     }
 
     .grid__twelve {
         @include grid(3, 4, 4, 5);
-        @include gridImage();
+        align-self: start;
+        @include flex(column, center, center);
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        .grid__card {
+            @include gridImage();
+            width: 100%;
+            padding: 1.56vw;
+
+            @media screen and (min-width: 1999px) {
+                padding: 30px;
+            }
+
+            @media screen and (max-width: 767px) {
+                width: 96%;
+            }
+
+            @media screen and (max-width: 319px) {
+                padding: 5px;
+            }
+        }
     }
 }
 

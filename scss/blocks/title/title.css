@@ -1,20 +1,27 @@
 .title {
   margin: 0;
   padding: 0;
-  width: 37%;
+  width: 39%;
   font-size: 4.17vw;
   line-height: 1.125;
   color: #273B4A;
   text-align: start;
   font-family: "Gramatika-Black", sans-serif;
 }
-@media screen and (max-width: 319px) {
-  .title {
-    font-size: 13.34px;
-  }
-}
 @media screen and (min-width: 1999px) {
   .title {
     font-size: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .title {
+    width: 85%;
+    font-size: 7vw;
+    line-height: 1.33;
+  }
+}
+@media screen and (max-width: 319px) {
+  .title {
+    font-size: 22.4px;
   }
 }/*# sourceMappingURL=title.css.map */

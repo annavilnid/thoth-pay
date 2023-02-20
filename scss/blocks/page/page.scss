@@ -1,5 +1,5 @@
 
-.page {
+.body {
     margin: 0 auto;
     min-width: 320px;
     max-width: 2000px;
@@ -8,4 +8,12 @@
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
+}
+
+.page {
+  scroll-behavior: smooth;
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    scroll-behavior: auto;
+  }
 }

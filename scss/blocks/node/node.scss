@@ -8,70 +8,88 @@
     overflow: hidden;
     position: relative;
 
-    @media screen and (max-width: 319px) {
-        @include indents(0 auto, 0 0 3.52px 0);
-    }
-
      @media screen and (min-width: 1999px) {
         @include indents(0 auto, 0 0 21.12px 0);
+    }
+
+    @media screen and (max-width: 767px) {
+        @include indents(0 auto, 0);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "line"
+                             "text"
+                             "qr"
+    }
+
+    @media screen and (max-width: 319px) {
     }
 
     &:before {
         right: 7.03vw;
         top: 14.90vw;
         @include circleGreen();
-
-        @media screen and (max-width: 319px) {
-            right: 22.49px;
-            top: 47.68px;
-        }
     
-         @media screen and (min-width: 1999px) {
+        @media screen and (min-width: 1999px) {
             right: 135px;
             top: 286px;
+        }
+
+        @media screen and (max-width: 767px) {
+            @include circleGreenSuperMax();
+            right: 10vw;
+            top: 38vw;
+        }
+
+        @media screen and (max-width: 319px) {
+            right: 33px;
+            top: 121px;
         }
     }
 
     &:after {
         @include pseudo();
-        @include image(url('../../../images/about-arrow.svg'));
+        @include image(url('../../../images/arrow-large.svg'));
         right: 4.95vw;
         top: 12.5vw;
-        width: 6%;
-        min-width: 19.2px;
+        width: 100%;
         max-width: 115.2px;
         height: 6vw;
-        min-height: 19.2px;
         max-height: 115.2px;
         background-size: 6vw 6vw;
         rotate: 180deg;
-
-        @media screen and (max-width: 319px) {
-            right: 15.84px;
-            top: 40px;
-            background-size: 19.2px 19.2px;
-        }
     
-         @media screen and (min-width: 1999px) {
+        @media screen and (min-width: 1999px) {
             right: 95px;
             top: 240px;
+            width: 100%;
             background-size: 115.2px 115.2px;
+        }
+
+        @media screen and (max-width: 767px) {
+            right: 5vw;
+            top: 32vw;
+            height: 14vw;
+            min-height: 44.8px;
+            background-size: 14vw 14vw;
+        }
+
+        @media screen and (max-width: 319px) {
+            right: 16px;
+            top: 102.4px;
+            background-size: 44.8px 44.8px;
         }
     }
 
     .node__border {
+        grid-area: line;
         position: relative;
         @include indents(0 0 5.9vw 8.2vw, 0);
         height: 6.8vw;
-        min-height: 22px;
         max-height: 130.5px;
-        width: 91.8%;
+        width: 100%;
         border-left: $border;
         border-bottom: $border;
-
-        @media screen and (max-width: 319px) {
-            @include indents(0 0 19px 26.24px, 0);
-        }
 
         @media screen and (min-width: 1999px) {
             @include indents(0 0 113.3px 157.5px, 0);
@@ -79,34 +97,47 @@
             border-bottom: $borderMax;
         }
 
+        @media screen and (max-width: 767px) {
+            @include indents(0 0 31vw 7vw, 0);
+            border-left: $borderMin;
+            border-bottom: $borderMin;
+            border-bottom-left-radius: 20px;
+            height: 15vw;
+            min-height: 48px;
+
+        }
+
+        @media screen and (max-width: 319px) {
+            @include indents(0 0 99px 22.4px, 0);
+        }
+
         &:after {
             @include circleGreen();
             bottom: -1.65vw;
             left: -1.65vw;
-
-            @media screen and (max-width: 319px) {
-                bottom: 5.28px;
-                left: 5.28px;
-            }
     
             @media screen and (min-width: 1999px) {
                 bottom: -31.68px;
                 left: -31.68px;
             }
+
+            @media screen and (max-width: 767px) {
+                @include circleGreenMax();
+                display: none;
+            }
         }
     }
 
     .node__qr {
+        grid-area: qr;
         height: 31.4vw;
         width: 43.44vw;
         max-width: 837px;
-        min-width: 139.5px;
         max-height: 638px;
-        min-height: 102px;
         border-top: $border;
         border-right: $border; 
         border-bottom: $border;
-        border-radius: 0 5% 5% 0;
+        border-radius: 0 20px 20px 0;
         box-shadow: 0 0 0 0.9vw $whiteColor, 0 0 0 1.1vw $darkGrayColor;
         @include image(url(./../../../images/qr.svg));
         background-position: center right;
@@ -118,9 +149,27 @@
             border-bottom: $borderMax;
             box-shadow: 0 0 0 16px $whiteColor, 0 0 0 21px $darkGrayColor;
         }
+
+        @media screen and (max-width: 767px) {
+            @include indents(10vw 0 2.5vw 0, 0);
+            align-self: start;
+            height: 67vw;
+            width: 85vw;
+            min-width: 272px;
+            min-height: 214.4px;
+            border-top: $borderMin;
+            border-right: $borderMin; 
+            border-bottom: $borderMin;
+            box-shadow: 0 0 0 7px $whiteColor, 0 0 0 10px $darkGrayColor;
+        }
+
+        @media screen and (max-width: 319px) {
+            @include indents(32px 0 9.5px, 0);
+        }
     }
 
     .node__wrapper {
+        grid-area: text;
         @include indents(0 9.48% 0 0, 0);
         width: 43%;
         max-width: 837px;
@@ -129,16 +178,29 @@
             width: 40%;
         }
 
+        @media screen and (max-width: 767px) {
+            width: 80%;
+            @include indents(0 auto, 0);
+        }
+
         .node__info_in_bold {
             @include indents(0, 0);
             @include font(4.17vw, 1.11, $darkGrayColor, left, $fontFamilyBlack);
 
-            @media screen and (max-width: 319px) {
-                font-size: 13.34px;
-            }
-
             @media screen and (min-width: 1999px) {
                 font-size: 90px;
+            }
+
+            @media screen and (max-width: 767px) {
+                padding-bottom: 3vw;
+                font-size: 7vw;
+                line-height: 1;
+
+            }
+
+            @media screen and (max-width: 319px) {
+                padding-bottom: 3vw;
+                font-size: 15px;
             }
         }
 
@@ -146,12 +208,17 @@
             @include indents(0, 0);
             @include font(2.34vw, 1.11, $darkGrayColor, left, $fontFamilyMedium);
 
-            @media screen and (max-width: 319px) {
-                font-size: 11.59px;
-            }
-
             @media screen and (min-width: 1999px) {
                 font-size: 45px;
+            }
+
+            @media screen and (max-width: 767px) {
+                font-size: 4.7vw;
+                line-height: 1.25;
+            }
+
+            @media screen and (max-width: 319px) {
+                font-size: 15px;
             }
         }
     }

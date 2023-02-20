@@ -2,14 +2,20 @@
 
 .title {
     @include indents(0, 0);
-    width: 37%;
+    width: 39%;
     @include font(4.17vw, 1.125, $darkGrayColor, start, $fontFamilyBlack);
 
-    @media screen and (max-width: 319px) {
-        font-size: 13.34px;
+    @media screen and (min-width: 1999px) {
+        font-size: 80px;
     }
 
-     @media screen and (min-width: 1999px) {
-        font-size: 80px;
+    @media screen and (max-width: 767px) {  
+        width: 85%;
+        font-size: 7vw;
+        line-height: 1.33;
+    }
+
+    @media screen and (max-width: 319px) {
+        font-size: 22.4px;
     }
 }
