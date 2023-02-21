@@ -1,0 +1,27 @@
+.left-line {
+  height: 3vw;
+  min-height: 9.6px;
+  max-height: 57.6px;
+  margin: 0 0 0 8.2%;
+  padding: 0;
+  border-left: 0.26vw solid #273B4A;
+}
+@media screen and (min-width: 1999px) {
+  .left-line {
+    border-left: 5px solid #273B4A;
+  }
+}
+@media screen and (max-width: 767px) {
+  .left-line {
+    border-left: 3px solid #273B4A;
+    border-top: 3px solid #273B4A;
+    margin: 0 6% 0 7%;
+    padding: 16vw 0 0 0;
+    border-top-left-radius: 20px;
+  }
+}
+@media screen and (max-width: 319px) {
+  .left-line {
+    padding-top: 52px;
+  }
+}/*# sourceMappingURL=left-line.css.map */

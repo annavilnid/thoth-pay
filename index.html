@@ -11,38 +11,72 @@
   <body class="body">
     <header class="header">
       <img class="header__logo" src="./images/main-logo.svg" alt="logo">
-      <nav class="header__navbar">
-        <ul class="header__links">
-          <li class="header__link-item">
-            <a href="#how-it-works" class="header__link">How it works</a>
-          </li>
-          <li class="header__link-item">
-            <a href="#docs" class="header__link">Docs</a>
-          </li>
-          <li class="header__link-item">
-            <a href="#fees" class="header__link">Payment fees</a>
-          </li>
-          <li class="header__link-item">
-            <a href="#node" class="header__link">Lightning node</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- <a href="#" class="header__button button" target="_blank">Merchant panel</a> -->
-      <a href="#" class="header__button button" target="_blank">Mer</a>
-      <div class="header__language">
-        <p class="header__language-text">En</p>
-        <button type="button" class="header__language-button"></button>
-      </div>
+        <div class="header__popup header__popup_is-opened">
+        <div class="header__wrapper">
+          <button type="button" class="header__close-button"></button>
+          <nav class="header__navbar">
+            <ul class="header__links">
+              <li class="header__link-item">
+                <a href="#how-it-works" class="header__link">How it works</a>
+              </li>
+              <li class="header__link-item">
+                <a href="#docs" class="header__link">Docs</a>
+              </li>
+              <li class="header__link-item">
+                <a href="#fees" class="header__link">Payment fees</a>
+              </li>
+              <li class="header__link-item">
+                <a href="#node" class="header__link">Lightning node</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="header__button button" target="_blank">Merchant panel</a>
+          <div class="header__language">
+            <p class="header__language-text">EN</p>
+            <button type="button" class="header__language-button"></button>
+            <div class="header__language-menu">
+              <div class="header__language-item">
+                <img class="header__language-flag" src="./images/GB.svg" alt="flag GB">
+                <button type="button" class="header__language-type">English</button>
+              </div>
+              <div class="header__language-item">
+                <img class="header__language-flag" src="./images/RU.svg" alt="flag RU">
+                <button type="button" class="header__language-type">Русский</button>
+              </div>
+              <div class="header__language-item">
+                <img class="header__language-flag" src="./images/TH.svg" alt="flag TH">
+                <button type="button" class="header__language-type">ภาษาไทย</button>
+              </div>
+              <div class="header__language-item">
+                <img class="header__language-flag" src="./images/MY.svg" alt="flag MY">
+                <button type="button" class="header__language-type">ملايو</button>
+              </div>
+              <div class="header__language-item">
+                <img class="header__language-flag" src="./images/KR.svg" alt="flag KR">
+                <button type="button" class="header__language-type">한국어</button>
+              </div>
+              <div class="header__language-item">
+                <img class="header__language-flag" src="./images/JP.svg" alt="logo flag JP">
+                <button type="button" class="header__language-type">日本語</button>
+              </div>
+              <div class="header__language-item">
+                <img class="header__language-flag" src="./images/QA.svg" alt="logo">
+                <button type="button" class="header__language-type">اللهجة القطرية</button>
+              </div>
+            </div>
+          </div>
+            <nav class="header__contacts contacts">
+              <a href="#" class="contacts__link" target="_blank"><div class="contacts__logo-telegram"></div></a>
+              <a href="#" class="contacts__link" target="_blank"><div class="contacts__logo-twitter"></div></a>
+              <a href="#" class="contacts__link" target="_blank"><div class="contacts__logo-facebook"></div></a>
+              <a href="#" class="contacts__link" target="_blank"><div class="contacts__logo-email"></div></a>
+            </nav>
+        </div>
+        </div>
       <button type="button" class="header__nav-button"></button>
     </header>
 
     <main class="main">
-      <!-- <nav class="contacts">
-        <a href="#" class="contacts__link" target="_blank"><img class="contacts__logo" src="./images/telegram.svg" alt="telegram logo"></a>
-        <a href="#" class="contacts__link" target="_blank"><img class="contacts__logo" src="./images/twitter.svg" alt="twitter logo"></a>
-        <a href="#" class="contacts__link" target="_blank"><img class="contacts__logo" src="./images/facebook.svg" alt="facebook logo"></a>
-        <a href="#" class="contacts__link" target="_blank"><img class="contacts__logo" src="./images/email.svg" alt="email logo"></a>
-      </nav> -->
 
       <section class="main__about about">
         <h1 class="about__title title">Receive<span class="about__title-span"> payments<br> in BTC, stablecoins for your business</span></h1>
@@ -61,31 +95,31 @@
       </section>
 
       <section class="main__how-it-works how-it-works">
-        <div class="main__right-line">
+        <div class="how-it-works__right-line">
           <h2 id="how-it-works" class="how-it-works__title title">How it works</h2>
           <div class="how-it-works__grid grid">
             <div class="grid__one">1</div>
             <h3 class="grid__two">Отправить счет</h3>
             <p class="grid__three">Мерчант выставляет счёт invoice в своей локальной валюте</p>
-            <div class="grid__four"><img class="grid__card" src="./images/step-one-card.jpg" alt=""></div> <!-- <a Написать название -->
+            <div class="grid__four"><img class="grid__card-left" src="./images/step-one-card.jpg" alt="card"></div>
             <div class="grid__five">2</div>
             <h3 class="grid__six">Оплата</h3>
             <p class="grid__seven">Пользователь оплачивает в той валюте, в которой ему удобно. Все сложности с переплатами и недоплатами мы берём на себя.</p>
             <div class="grid__eight">
-                <img class="grid__card" src="./images/step-two-image.jpg" alt=""> <!-- <a Написать название -->
+                <img class="grid__card-middle" src="./images/step-two-image.jpg" alt="card">
                 <div class="grid__link-wrapper">
-                  <a href="#" class="grid__link" target="_blank"><img class="grid__link-image" src="./images/step-two-icon-one.svg" alt=""></a><!-- <a Написать название -->
-                  <p class="grid__link-text">copy address/invoice copy address/invoice copy address/invoice copy address/invoice</p>
+                  <a href="#" class="grid__link" target="_blank"><img class="grid__link-image" src="./images/step-two-icon-one.svg" alt="logo"></a>
+                  <p class="grid__link-text">copy address/invoice</p>
                 </div>
                 <div class="grid__link-wrapper">
-                  <a href="#" class="grid__link" target="_blank"><img class="grid__link-image" src="./images/step-two-icon-two.svg" alt=""></a><!-- <a Написать название -->
+                  <a href="#" class="grid__link" target="_blank"><img class="grid__link-image" src="./images/step-two-icon-two.svg" alt="logo"></a>
                   <p class="grid__link-text">open in wallet</p>
                 </div>
             </div>
             <div class="grid__nine">3</div>
             <h3 class="grid__ten">Передача</h3>
             <p class="grid__eleven">Конвертация и вывод, мерчант в любой момент выводит свои средства на свой кошелёк в той валюте, в которой ему удобна.</p>
-            <div class="grid__twelve"><img class="grid__card" src="./images/step-three-image.jpeg" alt=""></div> <!-- <a Написать название -->
+            <div class="grid__twelve"><img class="grid__card-right" src="./images/step-three-image.jpeg" alt="card"></div>
           </div>
         </div>
       </section>

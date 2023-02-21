@@ -1,0 +1,29 @@
+.header__close-button {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .header__close-button {
+    transition: opacity 0.2s linear;
+    margin: 11.7vw 8vw 32vw;
+    padding: 0;
+    grid-area: close;
+    display: block;
+    background: url("../../../../../images/close-button.svg") center center no-repeat;
+    background-size: contain;
+    justify-self: end;
+    border: none;
+    min-width: 5.8vw;
+    width: 18.5px;
+    min-height: 5.8vw;
+    height: 18.5px;
+  }
+  .header__close-button:hover {
+    opacity: 0.6;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__close-button {
+    margin: 37.4px 25.5px 102.4px;
+    padding: 0;
+  }
+}/*# sourceMappingURL=header__close-button.css.map */

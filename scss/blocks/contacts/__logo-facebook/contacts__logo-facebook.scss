@@ -1,0 +1,5 @@
+@import '../../../variableStyles.scss';
+
+.contacts__logo-facebook {
+     @include navLogo(url('../../../../images/facebook.svg'), url('../../../../images/facebook-light.svg'));
+}

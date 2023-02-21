@@ -7,32 +7,23 @@
     min-height: 16vw;
     min-width: 2.9vw;;
     border-radius: 0 20px 20px 0;
-    position: fixed;
-    top: 22.40vw;
-    z-index: 10;
 
     @media screen and (min-width: 1999px) {
+        position: absolute;
         padding-left: 6px;
         min-height: 307px;
         min-width: 55px;
-        top: 430px;
+    }
+
+    @media screen and (max-width: 767px) {
+        @include flex(row, space-around, center);
+        background-color: $whiteColor;
+        border-top: 3px solid $lightGrayColor;
+        border-radius: 0;
+        @include indents(23vw 5% 0 15%, 4vw 0);
     }
 
     @media screen and (max-width: 319px) {
-        padding-left: 0.1px;
-        min-height: 115.6px;
-        min-width: 17.19px;
-        top: 134px;
-    }
-
-    .contacts__link {
-       @include hover();
-
-       .contacts__logo {
-            width: 2.24vw;
-            min-width: 7.17px;
-            max-width: 43px;
-
-        }
+        @include indents(23px 5% 0 15%, 12.8px 0);
     }
 }

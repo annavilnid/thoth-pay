@@ -1,0 +1,18 @@
+.docs__wrapper-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 49%;
+}
+@media screen and (max-width: 767px) {
+  .docs__wrapper-text {
+    padding-bottom: 6vw;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 319px) {
+  .docs__wrapper-text {
+    padding-bottom: 19.2px;
+  }
+}/*# sourceMappingURL=docs__wrapper-text.css.map */

@@ -1,5 +1,6 @@
 $whiteColor: #FFFFFF;
 $lightGrayColor:#9A9A9A;
+$mediumGrayColor: #979797;
 $darkGrayColor: #273B4A;
 $darkWhiteColor: #D9D9D9;
 $lightWhiteColor: #EEEEEE;
@@ -148,7 +149,7 @@ $borderMin: 3px solid $darkGrayColor;
     @media screen and (max-width: 767px) {
         @include indents(3vw 0 1vw 0, 0);
         font-size: 5.8vw;
-        line-height: 2,2;
+        line-height: 2.2;
     }
 
     @media screen and (max-width: 319px) {
@@ -184,4 +185,22 @@ $borderMin: 3px solid $darkGrayColor;
     border-radius: 20px;
     box-shadow: 0px 4px 30px rgba(217, 217, 217, 0.43);
     background-color: $whiteColor;
+}
+
+@mixin navLogo($url, $urlLight) {
+    @include image($url);
+    background-size: contain;
+    background-position: center center;
+    width: 2.24vw;
+    height: 2.24vw;
+    max-width: 43px;
+    max-height: 43px;
+
+    @media screen and (max-width: 767px) {
+        @include image($urlLight);
+        width: 10.5vw;
+        height: 10.5vw;
+        min-width: 33.5px;
+        min-height: 33.5px;
+    }
 }

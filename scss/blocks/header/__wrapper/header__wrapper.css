@@ -1,0 +1,14 @@
+.header__wrapper {
+  display: grid;
+  grid-template-columns: 69% 20.5% auto;
+  width: 100%;
+  -moz-column-gap: 1.6%;
+       column-gap: 1.6%;
+}
+@media screen and (max-width: 767px) {
+  .header__wrapper {
+    grid-template-columns: auto;
+    grid-template-rows: content;
+    grid-template-areas: "close" "nav" "lang" "button" "contacts";
+  }
+}/*# sourceMappingURL=header__wrapper.css.map */

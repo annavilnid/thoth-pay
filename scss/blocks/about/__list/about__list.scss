@@ -1,0 +1,17 @@
+@import '../../../variableStyles.scss';
+
+.about__list {
+    @include indents(8.7vw 0 1vw 3.5vw, 0);
+
+     @media screen and (min-width: 1999px) {
+        @include indents(167.04px 0 19.2px 67.2px, 0);
+    }
+
+    @media screen and (max-width: 767px) { 
+        @include indents(7vw 0 1vw 6vw, 0);
+    }
+
+    @media screen and (max-width: 319px) {
+        @include indents(22.4px 0 3.2px 19.2px, 0);
+    }
+}

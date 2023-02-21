@@ -1,0 +1,16 @@
+.grid__eight {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: start;
+}
+@media screen and (max-width: 767px) {
+  .grid__eight {
+    width: 100%;
+  }
+}/*# sourceMappingURL=grid__eight.css.map */

@@ -1,0 +1,55 @@
+.header {
+  min-width: 320px;
+  max-width: 2000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 7.86vw;
+  border-bottom: 0.21vw solid #273B4A;
+  overflow: hidden;
+}
+@media screen and (min-width: 1999px) {
+  .header {
+    min-height: 151px;
+    border-bottom: 5px solid #273B4A;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    box-sizing: border-box;
+    padding-top: 1%;
+    height: 26vw;
+    min-height: 83.2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #273B4A;
+  }
+}
+.header .header__nav-button {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .header .header__nav-button {
+    display: block;
+    margin-right: 5.37vw;
+    background: url("../../../images/burger-menu.svg") center center no-repeat;
+    background-size: contain;
+    width: 8.1vw;
+    height: 4.7vw;
+    min-width: 26px;
+    min-height: 15px;
+    border: none;
+    transition: opacity 0.2s linear;
+  }
+  .header .header__nav-button:hover {
+    opacity: 0.6;
+  }
+}
+@media screen and (max-width: 319px) {
+  .header .header__nav-button {
+    margin-right: 17px;
+  }
+}/*# sourceMappingURL=headerold.css.map */

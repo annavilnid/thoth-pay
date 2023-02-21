@@ -1,0 +1,14 @@
+.header__link-item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+@media screen and (max-width: 767px) {
+  .header__link-item {
+    width: 100%;
+    border-bottom: 3px solid #9A9A9A;
+  }
+}/*# sourceMappingURL=header__link-item.css.map */

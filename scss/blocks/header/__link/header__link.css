@@ -1,0 +1,37 @@
+.header__link {
+  margin: 0;
+  padding: 0.5vw 1.5vw;
+  font-size: 1.56vw;
+  line-height: 1.17;
+  color: #9A9A9A;
+  text-align: center;
+  font-family: "Gramatika-Regular", sans-serif;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  transition: opacity 0.2s linear;
+}
+.header__link:hover {
+  opacity: 0.6;
+}
+@media screen and (min-width: 1999px) {
+  .header__link {
+    font-size: 30px;
+    margin: 0;
+    padding: 9.6px 0 9.6px 38.4px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__link {
+    margin: 0;
+    padding: 4.6vw 0;
+    font-size: 7vw;
+    text-align: end;
+  }
+}
+@media screen and (max-width: 319px) {
+  .header__link {
+    font-size: 22.4px;
+    margin: 0;
+    padding: 14.7px 0;
+  }
+}/*# sourceMappingURL=header__link.css.map */

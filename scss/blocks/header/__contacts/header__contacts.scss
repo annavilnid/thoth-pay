@@ -1,0 +1,17 @@
+@import '../../../variableStyles.scss';
+
+.contacts {
+    position: absolute;
+    top: 22.40vw;
+    left: 0;
+    z-index: 10;
+
+    @media screen and (min-width: 1999px) {
+        top: 430px;
+    }
+
+    @media screen and (max-width: 767px) {
+        grid-area: contacts;
+        position: static;
+    }
+}

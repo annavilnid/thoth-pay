@@ -1,0 +1,33 @@
+.about__text {
+  width: 45%;
+  margin: 0;
+  padding: 2.1vw 0 3.1vw 2.2vw;
+  font-size: 1.56vw;
+  line-height: 1.5;
+  color: #000000;
+  text-align: start;
+  font-family: "Gramatika-Regular", sans-serif;
+}
+@media screen and (min-width: 1999px) {
+  .about__text {
+    margin: 0;
+    padding: 40.32px 0 60px 42.24px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__text {
+    margin: 0;
+    padding: 6vw 0 3.1vw 2.2vw;
+    width: 82%;
+    font-size: 4.2vw;
+    line-height: 1.39;
+  }
+}
+@media screen and (max-width: 319px) {
+  .about__text {
+    margin: 0;
+    padding: 19px 0 10px 7px;
+    font-size: 13.44px;
+  }
+}/*# sourceMappingURL=about__text.css.map */

@@ -57,7 +57,7 @@
         height: 6vw;
         max-height: 115.2px;
         background-size: 6vw 6vw;
-        rotate: 180deg;
+        transform: rotate(180deg);
     
         @media screen and (min-width: 1999px) {
             right: 95px;

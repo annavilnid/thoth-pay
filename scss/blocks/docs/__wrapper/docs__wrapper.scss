@@ -1,0 +1,22 @@
+@import '../../../variableStyles.scss';
+
+.docs__wrapper {
+    @include indents(0 auto, 0 0 5vw 0);
+    width: 80%;
+    @include flex(row, space-between, center);
+
+    @media screen and (min-width: 1999px) {
+        padding-bottom: 96px;
+    }
+
+    @media screen and (max-width: 767px) {
+        @include flex(column, space-between, center);
+        width: 96%;
+        padding-left: 4%;
+        position: relative;
+    }
+
+    @media screen and (max-width: 319px) {
+        padding-bottom: 16px;
+    }
+}

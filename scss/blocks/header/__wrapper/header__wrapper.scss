@@ -1,0 +1,18 @@
+@import '../../../variableStyles.scss';
+
+.header__wrapper {
+    display: grid; 
+    grid-template-columns: 69% 20.5% auto; 
+    width: 100%;
+    column-gap: 1.6%;
+
+    @media screen and (max-width: 767px) { 
+        grid-template-columns: auto;
+        grid-template-rows: content;
+        grid-template-areas: "close"
+                             "nav"
+                             "lang"
+                             "button"
+                             "contacts";
+    }
+}

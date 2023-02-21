@@ -1,0 +1,23 @@
+.docs__title {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 3.5vw 0 3.8vw 9.2vw;
+}
+@media screen and (min-width: 1999px) {
+  .docs__title {
+    margin: 0;
+    padding: 67.2px 0 72.96px 176.62px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .docs__title {
+    margin: 0;
+    padding: 9vw 0 7vw 14vw;
+  }
+}
+@media screen and (max-width: 319px) {
+  .docs__title {
+    margin: 0;
+    padding: 29px 0 22.4px 94px;
+  }
+}/*# sourceMappingURL=docs__title.css.map */

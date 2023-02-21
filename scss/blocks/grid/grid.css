@@ -1,0 +1,76 @@
+.grid {
+  margin: 0;
+  padding: 0 2vw 1.5vw 6vw;
+  display: grid;
+  grid-template-columns: repeat(3, 28%);
+  grid-auto-rows: auto;
+  -moz-column-gap: 7%;
+       column-gap: 7%;
+  position: relative;
+}
+@media screen and (min-width: 1999px) {
+  .grid {
+    margin: 0;
+    padding: 0 38.4px 28.8px 115.2px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 0 15vw 0;
+  }
+}
+@media screen and (max-width: 319px) {
+  .grid {
+    margin: 0;
+    padding: 0 0 48px 0;
+  }
+}
+.grid:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url("../../../../images/arrow-small.svg");
+  background-position: center center;
+  background-size: contain;
+  width: 4vw;
+  height: 4vw;
+  min-width: 3.2px;
+  min-height: 3.2px;
+  max-width: 76.8px;
+  max-height: 76.8px;
+  top: 4%;
+  left: 33.5%;
+}
+@media screen and (max-width: 767px) {
+  .grid:before {
+    display: none;
+  }
+}
+.grid:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url("../../../../images/arrow-small.svg");
+  background-position: center center;
+  background-size: contain;
+  width: 4vw;
+  height: 4vw;
+  min-width: 3.2px;
+  min-height: 3.2px;
+  max-width: 76.8px;
+  max-height: 76.8px;
+  top: 4%;
+  left: 65%;
+}
+@media screen and (max-width: 767px) {
+  .grid:after {
+    display: none;
+  }
+}/*# sourceMappingURL=grid.css.map */

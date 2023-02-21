@@ -1,0 +1,15 @@
+@import '../../../variableStyles.scss';
+
+.docs__wrapper-text {
+    @include flex(column, center, center);
+    width: 49%;
+
+    @media screen and (max-width: 767px) {
+        padding-bottom: 6vw;
+        width: 80%;
+    }
+
+    @media screen and (max-width: 319px) {
+        padding-bottom: 19.2px;
+    }
+}

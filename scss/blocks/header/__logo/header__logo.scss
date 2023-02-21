@@ -1,0 +1,29 @@
+@import '../../../variableStyles.scss';
+
+.header__logo {
+    @include indents(1.7vw 0 1.16vw 5.6vw, 0);
+    width: 7.3vw;
+    height: 5vw;
+    min-width: 23.36px;
+    min-height: 16px;
+    max-width: 140.16px;
+    max-height: 96px;
+    align-self: center;
+    
+    @media screen and (min-width: 1999px) {
+        @include indents(32.6px 0 22.27px 107.5px, 0);
+    }
+
+    @media screen and (max-width: 767px) { 
+        width: 18.7vw; 
+        min-width: 60px;
+        height: 12.65vw; 
+        min-height: 40.48px;
+        @include indents(1.25vw 0 0.85vw 7.7vw, 0);
+        @include flex(row, center, center) 
+    }
+
+    @media screen and (max-width: 319px) { 
+        @include indents(4px 0 2.7px 24.64px, 0);
+    }
+}

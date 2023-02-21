@@ -1,0 +1,28 @@
+@import '../../../variableStyles.scss';
+
+
+
+
+
+
+
+.header__language { 
+    @include indents(2.2vw 0 1vw 0, 0);
+    @include flex(row, center, center);
+    align-self: center;
+
+    @media screen and (min-width: 1999px) {
+        @include indents(42px 0 19.2px 0, 0);
+    }
+
+    @media screen and (max-width: 767px) {
+        position: relative;
+        grid-area: lang;
+        @include indents(4vw 1.5vw 13vw 0, 0);
+        @include flex(row, end, center);
+    }
+
+    @media screen and (max-width: 319px) {
+        @include indents(12.8px 4.8px 41.6px 0, 0);
+    }
+}

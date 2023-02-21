@@ -1,0 +1,25 @@
+.header__language-text {
+  margin: 0;
+  padding: 0;
+  font-size: 1.56vw;
+  line-height: 1.17;
+  color: #9A9A9A;
+  text-align: center;
+  font-family: "Gramatika-Regular", sans-serif;
+}
+@media screen and (min-width: 1999px) {
+  .header__language-text {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__language-text {
+    font-size: 7vw;
+    justify-self: end;
+  }
+}
+@media screen and (max-width: 319px) {
+  .header__language-text {
+    font-size: 22.4px;
+  }
+}/*# sourceMappingURL=header__language-text.css.map */

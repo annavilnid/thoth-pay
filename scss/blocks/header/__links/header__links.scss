@@ -1,0 +1,14 @@
+@import '../../../variableStyles.scss';
+
+.header__links {
+    @include indents(0,0);
+    @include flex(row, space-around, center);
+    flex-wrap: wrap;
+    width: 80%;
+    list-style: none;
+
+    @media screen and (max-width: 767px) {
+        @include indents(0,0 0 0 10%);
+        @include flex(column, center, end);
+    }
+}

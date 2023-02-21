@@ -1,0 +1,67 @@
+@import '../../../variableStyles.scss';
+
+.how-it-works__right-line {
+    @include indents(0 10% 0 8.2%, 0);
+    border-right: $border;
+    border-bottom: $border;
+    border-bottom-right-radius: 2.6vw;
+    position: relative;
+
+    @media screen and (min-width: 1999px) {
+        border-right: $borderMax;
+        border-bottom: $borderMax;
+        border-bottom-right-radius: 50px;
+    }
+
+    @media screen and (max-width: 767px) {
+        @include indents(0 6% 0 7%, 0);
+        border-right: $borderMin;
+        border-bottom: none;
+        border-bottom-right-radius: 0;
+    }
+
+    &:before {
+        @include circleGreen();
+        top: -1.65vw;
+        right: -1.65vw;
+
+        @media screen and (min-width: 1999px) {
+            top: -31.68px;
+            right: -31.68px;
+        }
+
+        @media screen and (max-width: 767px) {
+            @include circleGreenMax();
+            top: -3vw;
+            right: -3vw;
+        }
+
+        @media screen and (max-width: 319px) {
+            top: -5.28px;
+            right: -5.28px;
+        }
+    }
+
+    &:after {
+        @include circleGreen();
+        bottom: -1.65vw;
+        left: -1.65vw;
+
+        @media screen and (min-width: 1999px) {
+            bottom: -9.6px;
+            left: -9.6px;
+        }
+
+        @media screen and (max-width: 767px) {
+            @include circleGreenMax();
+            bottom: -3vw;
+            right: -3vw;
+            left: auto;
+        }
+
+        @media screen and (max-width: 319px) {
+            bottom: -9.6px;
+            right: -9.6px;
+        }
+    }
+}

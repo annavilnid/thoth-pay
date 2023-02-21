@@ -1,0 +1,23 @@
+.about__title-span {
+  font-size: 3.65vw;
+  line-height: 1.143;
+  color: #273B4A;
+  text-align: start;
+  font-family: "Gramatika-Black", sans-serif;
+}
+@media screen and (min-width: 1999px) {
+  .about__title-span {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__title-span {
+    font-size: 7vw;
+    line-height: 1.33;
+  }
+}
+@media screen and (max-width: 319px) {
+  .about__title-span {
+    font-size: 22.4px;
+  }
+}/*# sourceMappingURL=about__title-span.css.map */

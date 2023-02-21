@@ -1,0 +1,25 @@
+@import '../../../variableStyles.scss';
+
+.grid__link-text {
+    width: 100%;
+    @include gridImage();
+    @include indents(0, 0.75vw 1vw 0.75vw 3.1vw);
+    @include font(1.2vw, 1.17, $darkGreenColor, center, $fontFamilyRegular);
+
+    @media screen and (min-width: 1999px) {
+        @include indents(0, 14.4px 19.2px 14.4px 59.5px);
+        font-size: 23.04px;
+    }
+
+    @media screen and (max-width: 767px) {
+        @include indents(0, 2vw 2vw 2vw 14.2vw);
+        font-size: 5.4vw;
+        line-height: 1.17;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 319px) {
+        @include indents(0, 6.4px 6.4px 6.4px 45.4px);
+        font-size: 12px;
+    }
+}

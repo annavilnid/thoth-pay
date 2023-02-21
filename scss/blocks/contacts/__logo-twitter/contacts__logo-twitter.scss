@@ -1,0 +1,5 @@
+@import '../../../variableStyles.scss';
+
+.contacts__logo-twitter {
+    @include navLogo(url('../../../../images/twitter.svg'), url('../../../../images/twitter-light.svg'));
+}

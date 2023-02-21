@@ -1,0 +1,22 @@
+.about__list {
+  margin: 8.7vw 0 1vw 3.5vw;
+  padding: 0;
+}
+@media screen and (min-width: 1999px) {
+  .about__list {
+    margin: 167.04px 0 19.2px 67.2px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__list {
+    margin: 7vw 0 1vw 6vw;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 319px) {
+  .about__list {
+    margin: 22.4px 0 3.2px 19.2px;
+    padding: 0;
+  }
+}/*# sourceMappingURL=about__list.css.map */

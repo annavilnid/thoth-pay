@@ -1,0 +1,31 @@
+.about__item {
+  margin: 0;
+  padding: 0 0 0 0.5vw;
+  font-size: 1.56vw;
+  line-height: 1.83;
+  color: #000000;
+  text-align: start;
+  font-family: "Gramatika-Medium", sans-serif;
+}
+@media screen and (min-width: 1999px) {
+  .about__item {
+    padding-left: 9.6px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__item {
+    margin-bottom: 1.6vw;
+    font-size: 4.2vw;
+    line-height: 1.39;
+    color: #000000;
+    text-align: start;
+    font-family: "Gramatika-Regular", sans-serif;
+  }
+}
+@media screen and (max-width: 319px) {
+  .about__item {
+    margin-bottom: 5px;
+    font-size: 13.5px;
+  }
+}/*# sourceMappingURL=about__item.css.map */

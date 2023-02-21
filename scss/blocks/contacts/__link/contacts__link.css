@@ -1,0 +1,6 @@
+.contacts__link {
+  transition: opacity 0.2s linear;
+}
+.contacts__link:hover {
+  opacity: 0.6;
+}/*# sourceMappingURL=contacts__link.css.map */

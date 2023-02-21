@@ -1,0 +1,24 @@
+@import '../../../variableStyles.scss';
+
+.header__link {
+    @include indents(0, 0.5vw 1.5vw); 
+    @include font(1.56vw, 1.17, $lightGrayColor, center, $fontFamilyRegular);
+    text-decoration-line: none;
+    @include hover();
+
+    @media screen and (min-width: 1999px) {
+        font-size: 30px;
+        @include indents(0, 9.6px 0 9.6px 38.4px);
+    }
+
+    @media screen and (max-width: 767px) {
+        @include indents(0, 4.6vw 0);
+        font-size: 7vw;
+        text-align: end;
+    }
+
+    @media screen and (max-width: 319px) {
+       font-size: 22.4px;
+       @include indents(0, 14.7px 0);
+    } 
+}

@@ -1,0 +1,21 @@
+@import '../../../variableStyles.scss';
+
+.about__item {
+    @include indents(0, 0 0 0 0.5vw);
+    @include font(1.56vw, 1.83, $blackColor, start, $fontFamilyMedium);
+
+    @media screen and (min-width: 1999px) {
+        padding-left: 9.6px;
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 767px) { 
+        margin-bottom: 1.6vw;
+        @include font(4.2vw, 1.39, $blackColor, start, $fontFamilyRegular);
+    }
+
+    @media screen and (max-width: 319px) {
+        margin-bottom: 5px;
+        font-size: 13.5px;
+    }
+}

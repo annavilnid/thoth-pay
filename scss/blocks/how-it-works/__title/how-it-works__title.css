@@ -1,0 +1,22 @@
+.how-it-works__title {
+  margin: 0;
+  padding: 4vw 0 2.56vw 1.2vw;
+}
+@media screen and (min-width: 1999px) {
+  .how-it-works__title {
+    margin: 0;
+    padding: 76.8px 0 49.15px 23px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .how-it-works__title {
+    margin: 0;
+    padding: 7.5vw 0 0 1vw;
+  }
+}
+@media screen and (max-width: 319px) {
+  .how-it-works__title {
+    margin: 0;
+    padding: 24px 0 0 3.2px;
+  }
+}/*# sourceMappingURL=how-it-works__title.css.map */

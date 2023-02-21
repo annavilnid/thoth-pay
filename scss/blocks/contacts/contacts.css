@@ -8,34 +8,31 @@
   min-height: 16vw;
   min-width: 2.9vw;
   border-radius: 0 20px 20px 0;
-  position: fixed;
-  top: 22.4vw;
-  z-index: 10;
 }
 @media screen and (min-width: 1999px) {
   .contacts {
+    position: absolute;
     padding-left: 6px;
     min-height: 307px;
     min-width: 55px;
-    top: 430px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-top: 3px solid #9A9A9A;
+    border-radius: 0;
+    margin: 23vw 5% 0 15%;
+    padding: 4vw 0;
   }
 }
 @media screen and (max-width: 319px) {
   .contacts {
-    padding-left: 0.1px;
-    min-height: 115.6px;
-    min-width: 17.19px;
-    top: 134px;
+    margin: 23px 5% 0 15%;
+    padding: 12.8px 0;
   }
-}
-.contacts .contacts__link {
-  transition: opacity 0.2s linear;
-}
-.contacts .contacts__link:hover {
-  opacity: 0.6;
-}
-.contacts .contacts__link .contacts__logo {
-  width: 2.24vw;
-  min-width: 7.17px;
-  max-width: 43px;
 }/*# sourceMappingURL=contacts.css.map */

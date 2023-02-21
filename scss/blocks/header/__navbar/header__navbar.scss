@@ -1,0 +1,15 @@
+@import '../../../variableStyles.scss';
+
+.header__navbar {
+    width: 100%;
+    @include indents(2.2vw 0 1vw 0, 0); 
+    @include flex(row, center, center);
+
+    @media screen and (min-width: 1999px) {
+        @include indents(42.24px 0 19.2px 0, 0); 
+    }
+
+    @media screen and (max-width: 767px) {
+        grid-area: nav;
+    }
+}

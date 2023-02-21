@@ -1,0 +1,19 @@
+@import '../../../variableStyles.scss';
+
+.header__language-text {
+    @include indents(0, 0); 
+    @include font(1.56vw, 1.17, $lightGrayColor, center, $fontFamilyRegular); 
+
+    @media screen and (min-width: 1999px) {
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 7vw;
+        justify-self: end;
+    }
+
+    @media screen and (max-width: 319px) {
+        font-size: 22.4px;
+    }
+}

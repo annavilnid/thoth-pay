@@ -1,0 +1,42 @@
+.docs__button-light {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: opacity 0.2s linear;
+  margin: 0 0 0 0;
+  padding: 0.7vw 0;
+  font-size: 1.6vw;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+  font-family: "Gramatika-Regular", sans-serif;
+  width: 100%;
+  border: 0.2vw solid #000000;
+}
+.docs__button-light:hover {
+  opacity: 0.6;
+}
+@media screen and (min-width: 1999px) {
+  .docs__button-light {
+    margin: 0 0 0 0;
+    padding: 13.44px 0;
+    font-size: 30px;
+    border: 3.8px solid #000000;
+  }
+}
+@media screen and (max-width: 767px) {
+  .docs__button-light {
+    margin: 3vw 0 0 0;
+    padding: 0 0;
+    width: 64%;
+    font-size: 4.7vw;
+    line-height: 1.8;
+  }
+}
+@media screen and (max-width: 319px) {
+  .docs__button-light {
+    margin: 9.6px 0 0 0;
+    padding: 0 0;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=docs__button-light.css.map */

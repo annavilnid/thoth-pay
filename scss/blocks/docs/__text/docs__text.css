@@ -1,0 +1,25 @@
+.docs__text {
+  margin: 0;
+  padding: 0;
+  font-size: 2.1vw;
+  line-height: 1.125;
+  color: #273B4A;
+  text-align: start;
+  font-family: "Gramatika-Regular", sans-serif;
+}
+@media screen and (min-width: 1999px) {
+  .docs__text {
+    font-size: 40.32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .docs__text {
+    font-size: 4.2vw;
+    line-height: 1.4;
+  }
+}
+@media screen and (max-width: 319px) {
+  .docs__text {
+    font-size: 13.44px;
+  }
+}/*# sourceMappingURL=docs__text.css.map */

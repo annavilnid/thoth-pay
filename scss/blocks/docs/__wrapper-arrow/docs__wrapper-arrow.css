@@ -1,0 +1,36 @@
+.docs__wrapper-arrow {
+  background-repeat: no-repeat;
+  background-image: url(./../../../../images/arrow-medium.svg);
+  background-position: center center;
+  background-size: contain;
+  border: 1.5vw solid #5DE9B6;
+  width: 4vw;
+  max-width: 76.8px;
+  height: 4vw;
+  max-height: 76.8px;
+  background-color: #5DE9B6;
+  border-radius: 50%;
+}
+@media screen and (min-width: 1999px) {
+  .docs__wrapper-arrow {
+    border: 3.8px solid #5DE9B6;
+  }
+}
+@media screen and (max-width: 767px) {
+  .docs__wrapper-arrow {
+    position: absolute;
+    top: 48%;
+    right: 8.5%;
+    width: 10vw;
+    min-width: 32px;
+    height: 10vw;
+    min-height: 32px;
+    border: 4vw solid #5DE9B6;
+    transform: rotate(155deg);
+  }
+}
+@media screen and (max-width: 319px) {
+  .docs__wrapper-arrow {
+    border: 12.8px solid #5DE9B6;
+  }
+}/*# sourceMappingURL=docs__wrapper-arrow.css.map */

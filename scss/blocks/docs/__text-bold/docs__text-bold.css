@@ -1,0 +1,26 @@
+.docs__text-bold {
+  margin: 0 0 2vw 0;
+  padding: 0;
+  font-size: 2.3vw;
+  line-height: 1;
+  color: #273B4A;
+  text-align: start;
+  font-family: "Gramatika-Bold", sans-serif;
+}
+@media screen and (min-width: 1999px) {
+  .docs__text-bold {
+    margin-bottom: 38.4px;
+    font-size: 44.16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .docs__text-bold {
+    font-size: 4.7vw;
+    line-height: 1.25;
+  }
+}
+@media screen and (max-width: 319px) {
+  .docs__text-bold {
+    font-size: 15.4px;
+  }
+}/*# sourceMappingURL=docs__text-bold.css.map */

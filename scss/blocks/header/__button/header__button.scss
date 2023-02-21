@@ -1,0 +1,28 @@
+@import '../../../variableStyles.scss';
+
+.header__button {
+    @include linkButton();
+    @include indents(2.2vw 0 1vw 0, 0.75vw 1.2vw);
+    @include font(1.56vw, 1.17, $whiteColor, center, $fontFamilyBold);
+    width: 100%;
+    background-color: $lightGreenColor; 
+    box-sizing: border-box;
+    align-self: center;
+
+    @media screen and (min-width: 1999px) {
+        font-size: 30px;
+        @include indents(42px 0 19.2px 0, 14.4px 61.4px);
+    }
+
+    @media screen and (max-width: 767px) {
+        grid-area: button;
+        @include indents(0 auto 0 13%, 2vw);
+        width: 80%;
+        font-size: 5.8vw;
+    }
+
+    @media screen and (max-width: 319px) {
+        @include indents(0 auto 0 13%, 6.4vw);
+        font-size: 18.56px;
+    }
+}

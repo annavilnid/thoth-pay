@@ -1,0 +1,13 @@
+@import '../../../variableStyles.scss';
+
+.grid__four {
+    @include grid(1, 2, 4, 5);
+    align-self: start;
+    @include flex(column, center, center);
+    
+
+    @media screen and (max-width: 767px) {
+        @include flex(column, center, center)
+
+    }
+}

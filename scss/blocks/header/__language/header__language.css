@@ -1,0 +1,33 @@
+.header__language {
+  margin: 2.2vw 0 1vw 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+@media screen and (min-width: 1999px) {
+  .header__language {
+    margin: 42px 0 19.2px 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__language {
+    position: relative;
+    grid-area: lang;
+    margin: 4vw 1.5vw 13vw 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 319px) {
+  .header__language {
+    margin: 12.8px 4.8px 41.6px 0;
+    padding: 0;
+  }
+}/*# sourceMappingURL=header__language.css.map */

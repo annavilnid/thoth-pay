@@ -18,13 +18,13 @@
 @media screen and (max-width: 767px) {
   .footer {
     margin: 0;
-    padding: 22.5vw 0;
+    padding: 42vw 0 12vw 0;
   }
 }
 @media screen and (max-width: 319px) {
   .footer {
     margin: 0;
-    padding: 38.4px 0;
+    padding: 136px 0 38.4px 0;
   }
 }
 .footer .footer__last-content {

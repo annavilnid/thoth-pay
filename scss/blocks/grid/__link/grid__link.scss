@@ -1,0 +1,24 @@
+@import '../../../variableStyles.scss';
+
+.grid__link {
+    @include hover();
+    position: absolute;
+    top: calc(50% - 1.16vw);
+    left: -1.5%;
+    width: 3vw;
+    max-width: 57.6px;
+
+    @media screen and (min-width: 1999px) {
+        top: calc(50% - 24px);
+    }
+
+    @media screen and (max-width: 767px) {
+        top: calc(50% - 6vw);
+        width: 13.4vw;
+        min-width: 42.8px;
+    }
+
+    @media screen and (max-width: 319px) {
+        top: calc(50% - 19.2px);
+    }
+}

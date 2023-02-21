@@ -1,0 +1,22 @@
+@import '../../../variableStyles.scss';
+
+.header__nav-button {
+    display: none;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+        margin-right: 5.37vw; 
+        background: url('../../../images/burger-menu.svg') center center no-repeat; 
+        background-size: contain;
+        width: 8.1vw; 
+        height: 4.7vw; 
+        min-width: 26px;
+        min-height: 15px;
+        border: none;
+        @include hover();
+    }
+
+    @media screen and (max-width: 319px) {
+        margin-right: 17px;
+    }
+}

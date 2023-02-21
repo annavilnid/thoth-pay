@@ -1,0 +1,24 @@
+.header__language-menu {
+  box-sizing: border-box;
+  padding: 45px;
+  position: absolute;
+  top: 5vw;
+  right: 0;
+  width: 25%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(238, 238, 238, 0.61);
+  border-radius: 20px;
+  z-index: 11;
+}
+@media screen and (min-width: 1999px) {
+  .header__language-menu {
+    top: 101px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__language-menu {
+    top: 20vw;
+    right: 10px;
+    width: 86%;
+  }
+}/*# sourceMappingURL=header__language-menu.css.map */

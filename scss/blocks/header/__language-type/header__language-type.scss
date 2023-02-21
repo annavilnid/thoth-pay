@@ -1,0 +1,9 @@
+@import '../../../variableStyles.scss';
+
+.header__language-type {
+    @include indents(0, 0);
+    @include font(17px, 1.4, $mediumGrayColor, left, $fontFamilyRegular);
+    border: none;
+    background-color: $whiteColor;
+    min-height: 45px;
+}

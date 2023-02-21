@@ -1,0 +1,20 @@
+.contacts__logo-twitter {
+  background-repeat: no-repeat;
+  background-image: url("../../../../images/twitter.svg");
+  background-size: contain;
+  background-position: center center;
+  width: 2.24vw;
+  height: 2.24vw;
+  max-width: 43px;
+  max-height: 43px;
+}
+@media screen and (max-width: 767px) {
+  .contacts__logo-twitter {
+    background-repeat: no-repeat;
+    background-image: url("../../../../images/twitter-light.svg");
+    width: 10.5vw;
+    height: 10.5vw;
+    min-width: 33.5px;
+    min-height: 33.5px;
+  }
+}/*# sourceMappingURL=contacts__logo-twitter.css.map */

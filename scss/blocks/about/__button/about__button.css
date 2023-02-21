@@ -1,0 +1,44 @@
+.about__button {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: opacity 0.2s linear;
+  margin: 0 0 0 2.19vw;
+  padding: 0.75vw 1.5vw;
+  font-size: 1.56vw;
+  line-height: 1.17;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Gramatika-Bold", sans-serif;
+  background: #5DE9B6;
+  width: 21.5%;
+}
+.about__button:hover {
+  opacity: 0.6;
+}
+@media screen and (min-width: 1999px) {
+  .about__button {
+    margin: 0 0 0 42px;
+    padding: 14.4px 28.8px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__button {
+    margin: 2vw 0 0 2.19vw;
+    padding: 1vw 2vw;
+    font-size: 4.67vw;
+    line-height: 1.15;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Gramatika-Bold", sans-serif;
+    width: 56%;
+  }
+}
+@media screen and (max-width: 319px) {
+  .about__button {
+    margin: 6.4px 0 0 7px;
+    padding: 3.2px 6.4px;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=about__button.css.map */

@@ -1,0 +1,6 @@
+@import '../../../variableStyles.scss';
+
+.grid__two {
+    @include grid(1, 2, 2, 3);
+    @include gridSubtitle();
+}

@@ -1,0 +1,56 @@
+@import '../../../variableStyles.scss';
+
+.about__title { 
+    @include indents(0, 3.85vw 0 1.56vw 9.2vw);
+    position: relative;
+
+    @media screen and (min-width: 1999px) {
+        @include indents(0, 73.92px 0 29.95px 176.64px);
+    }
+
+    @media screen and (max-width: 767px) { 
+        @include indents(0, 94vw 0 3.7vw 8.1vw);
+        width: 75%;
+    }
+
+    @media screen and (max-width: 319px) {
+        @include indents(0, 301px 0 11.8px 26px);
+    }
+
+    &:after {
+        @include pseudo();
+        @include image(url('../../../../images/arrow-large.svg'));
+        background-size: contain;
+        background-position: center center;
+        right: -6.8vw;
+        top: 4vw;
+        width: 6vw;
+        min-width: 19.2px;
+        max-width: 115.2px;
+        height: 6vw;
+        min-height: 19.2px;
+        max-height: 115.2px;
+    
+        @media screen and (min-width: 1999px) {
+            right: -130.56px;
+            top: 76.8px;
+        }
+
+        @media screen and (max-width: 767px) { 
+            background-position: center center;
+            background-size: contain;
+            right: -11vw;
+            top: 96vw;
+            width: 8.8vw; 
+            height: 8.8vw; 
+            min-width: 28.16px;
+            min-height: 28.16px;
+        }
+
+        @media screen and (max-width: 319px) {
+            right: -35.2px;
+            top: 310px;
+        }
+    }
+}
+

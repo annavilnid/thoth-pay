@@ -1,0 +1,18 @@
+@import '../../../variableStyles.scss';
+
+.header__popup {
+    display: none;
+    width: 100%;
+
+    @media screen and (max-width: 767px) { 
+        position: absolute;
+        height: 100%;
+        width: 86%;
+        top: 0;
+        right: 0%;
+        box-shadow: 0px 4px 30px rgba(217, 217, 217, 0.43);
+        z-index: 10;
+        background-color: $whiteColor;
+        transition: 0.5s ease;
+    }
+}

@@ -1,0 +1,28 @@
+@import '../../../variableStyles.scss';
+
+.grid__link-wrapper {
+    @include indents(0 auto 0.9vw auto, 0);
+    @include flex(column, center, center);
+    min-width: 80%;
+    position: relative;
+
+    &:last-of-type {
+
+        @media screen and (max-width: 767px) {
+            @include indents(3.7vw auto 0 auto, 0);
+        }
+
+        @media screen and (max-width: 319px) {
+            @include indents(16px auto 0 auto, 0);
+        }
+    }
+
+    @media screen and (min-width: 1999px) {
+        @include indents(0 auto 17.28px auto, 0);
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 96%;
+        @include indents(0 auto, 0);
+    }
+}

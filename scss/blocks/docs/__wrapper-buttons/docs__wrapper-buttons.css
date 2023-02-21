@@ -1,0 +1,16 @@
+.docs__wrapper-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 27%;
+}
+@media screen and (max-width: 767px) {
+  .docs__wrapper-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    width: 80%;
+  }
+}/*# sourceMappingURL=docs__wrapper-buttons.css.map */

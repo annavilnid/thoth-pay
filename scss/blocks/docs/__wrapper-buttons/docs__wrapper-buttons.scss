@@ -1,0 +1,11 @@
+@import '../../../variableStyles.scss';
+
+.docs__wrapper-buttons {
+    @include flex(column, center, center);
+    width: 27%;
+
+    @media screen and (max-width: 767px) {
+    @include flex(column, start, flex-start);
+        width: 80%;
+    }
+}

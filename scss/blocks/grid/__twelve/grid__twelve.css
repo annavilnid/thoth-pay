@@ -1,0 +1,16 @@
+.grid__twelve {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .grid__twelve {
+    width: 100%;
+  }
+}/*# sourceMappingURL=grid__twelve.css.map */

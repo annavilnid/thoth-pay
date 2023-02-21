@@ -1,0 +1,25 @@
+.grid__card-left {
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 0px 4px 30px rgba(217, 217, 217, 0.43);
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 1.56vw;
+}
+@media screen and (min-width: 1999px) {
+  .grid__card-left {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .grid__card-left {
+    width: 96%;
+    margin: 0 auto;
+    padding: 5.4vw;
+  }
+}
+@media screen and (max-width: 319px) {
+  .grid__card-left {
+    padding: 17px;
+  }
+}/*# sourceMappingURL=grid__card-left.css.map */

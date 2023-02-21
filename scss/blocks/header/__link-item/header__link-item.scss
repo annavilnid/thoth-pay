@@ -1,0 +1,11 @@
+@import '../../../variableStyles.scss';
+
+.header__link-item {
+    @include indents(0,0);
+    @include flex(column, center, stretch);
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        border-bottom: 3px solid $lightGrayColor;
+    }
+}

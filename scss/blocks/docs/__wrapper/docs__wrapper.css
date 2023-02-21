@@ -1,0 +1,30 @@
+.docs__wrapper {
+  margin: 0 auto;
+  padding: 0 0 5vw 0;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 1999px) {
+  .docs__wrapper {
+    padding-bottom: 96px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .docs__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    padding-left: 4%;
+    position: relative;
+  }
+}
+@media screen and (max-width: 319px) {
+  .docs__wrapper {
+    padding-bottom: 16px;
+  }
+}/*# sourceMappingURL=docs__wrapper.css.map */

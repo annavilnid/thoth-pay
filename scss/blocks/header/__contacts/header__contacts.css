@@ -1,0 +1,17 @@
+.contacts {
+  position: absolute;
+  top: 22.4vw;
+  left: 0;
+  z-index: 10;
+}
+@media screen and (min-width: 1999px) {
+  .contacts {
+    top: 430px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts {
+    grid-area: contacts;
+    position: static;
+  }
+}/*# sourceMappingURL=header__contacts.css.map */

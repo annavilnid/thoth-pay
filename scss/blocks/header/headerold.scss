@@ -1,0 +1,46 @@
+@import '../../variableStyles.scss';
+
+.header {
+    @include limits();
+    @include flex(row, space-between, center);
+    min-height: 7.86vw;
+    border-bottom: $borderHeader;
+    overflow: hidden;
+
+   @media screen and (min-width: 1999px) {
+        min-height: 151px;
+        border-bottom: $borderMax;
+    }
+
+    @media screen and (max-width: 767px) { 
+        box-sizing: border-box;
+        padding-top: 1%;
+        height: 26vw; 
+        min-height: 83.2px;
+        @include flex(row, space-between, center);
+        border-bottom: $borderMin;
+    }
+
+    
+
+    .header__nav-button {
+        display: none;
+
+        @media screen and (max-width: 767px) {
+            display: block;
+            margin-right: 5.37vw; 
+            background: url('../../../images/burger-menu.svg') center center no-repeat; 
+            background-size: contain;
+            width: 8.1vw; 
+            height: 4.7vw; 
+            min-width: 26px;
+            min-height: 15px;
+            border: none;
+            @include hover();
+        }
+
+        @media screen and (max-width: 319px) {
+            margin-right: 17px;
+        }
+    }  
+}

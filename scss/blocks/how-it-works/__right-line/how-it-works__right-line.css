@@ -1,0 +1,113 @@
+.how-it-works__right-line {
+  margin: 0 10% 0 8.2%;
+  padding: 0;
+  border-right: 0.26vw solid #273B4A;
+  border-bottom: 0.26vw solid #273B4A;
+  border-bottom-right-radius: 2.6vw;
+  position: relative;
+}
+@media screen and (min-width: 1999px) {
+  .how-it-works__right-line {
+    border-right: 5px solid #273B4A;
+    border-bottom: 5px solid #273B4A;
+    border-bottom-right-radius: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .how-it-works__right-line {
+    margin: 0 6% 0 7%;
+    padding: 0;
+    border-right: 3px solid #273B4A;
+    border-bottom: none;
+    border-bottom-right-radius: 0;
+  }
+}
+.how-it-works__right-line:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-color: #5DE9B6;
+  width: 3.3vw;
+  max-width: 63.36px;
+  height: 3.3vw;
+  max-height: 63.36px;
+  border-radius: 50%;
+  top: -1.65vw;
+  right: -1.65vw;
+}
+@media screen and (min-width: 1999px) {
+  .how-it-works__right-line:before {
+    top: -31.68px;
+    right: -31.68px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .how-it-works__right-line:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-color: #5DE9B6;
+    width: 3.3vw;
+    max-width: 63.36px;
+    height: 3.3vw;
+    max-height: 63.36px;
+    border-radius: 50%;
+    min-width: 18.6px;
+    min-height: 18.6px;
+    width: 5.8vw;
+    height: 5.8vw;
+    top: -3vw;
+    right: -3vw;
+  }
+}
+@media screen and (max-width: 319px) {
+  .how-it-works__right-line:before {
+    top: -5.28px;
+    right: -5.28px;
+  }
+}
+.how-it-works__right-line:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-color: #5DE9B6;
+  width: 3.3vw;
+  max-width: 63.36px;
+  height: 3.3vw;
+  max-height: 63.36px;
+  border-radius: 50%;
+  bottom: -1.65vw;
+  left: -1.65vw;
+}
+@media screen and (min-width: 1999px) {
+  .how-it-works__right-line:after {
+    bottom: -9.6px;
+    left: -9.6px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .how-it-works__right-line:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-color: #5DE9B6;
+    width: 3.3vw;
+    max-width: 63.36px;
+    height: 3.3vw;
+    max-height: 63.36px;
+    border-radius: 50%;
+    min-width: 18.6px;
+    min-height: 18.6px;
+    width: 5.8vw;
+    height: 5.8vw;
+    bottom: -3vw;
+    right: -3vw;
+    left: auto;
+  }
+}
+@media screen and (max-width: 319px) {
+  .how-it-works__right-line:after {
+    bottom: -9.6px;
+    right: -9.6px;
+  }
+}/*# sourceMappingURL=how-it-works__right-line.css.map */

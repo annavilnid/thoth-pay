@@ -1,0 +1,18 @@
+@import '../../../variableStyles.scss';
+
+.docs__title {
+    box-sizing: border-box;
+    @include indents(0, 3.5vw 0 3.8vw 9.2vw);
+
+    @media screen and (min-width: 1999px) {
+        @include indents(0, 67.2px 0 72.96px 176.62px);
+    }
+
+    @media screen and (max-width: 767px) {
+        @include indents(0, 9vw 0 7vw 14vw);
+    }
+
+    @media screen and (max-width: 319px) {
+        @include indents(0, 29px 0 22.4px 94px);
+    }
+}

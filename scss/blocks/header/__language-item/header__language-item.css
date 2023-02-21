@@ -1,0 +1,7 @@
+.header__language-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid #EEEEEE;
+}/*# sourceMappingURL=header__language-item.css.map */

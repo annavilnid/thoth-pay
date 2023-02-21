@@ -1,0 +1,5 @@
+@import '../../../variableStyles.scss';
+
+.contacts__logo-telegram {
+    @include navLogo(url('../../../../images/telegram.svg'), url('../../../../images/telegram-light.svg'));
+}

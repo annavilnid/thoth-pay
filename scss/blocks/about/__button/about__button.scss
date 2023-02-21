@@ -1,0 +1,26 @@
+@import '../../../variableStyles.scss';
+
+.about__button {
+    @include linkButton();
+    @include indents(0 0 0 2.19vw, 0.75vw 1.5vw);
+    @include font(1.56vw, 1.17, $whiteColor, center, $fontFamilyBold);
+    background: $lightGreenColor;
+    width: 21.5%;
+
+     @media screen and (min-width: 1999px) {
+        @include indents(0 0 0 42px, 14.4px 28.8px);
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 767px) { 
+        @include indents(2vw 0 0 2.19vw, 1vw 2vw);
+        @include font(4.67vw, 1.15, $whiteColor, center, $fontFamilyBold);
+        width: 56%;
+    }
+
+    @media screen and (max-width: 319px) {
+        @include indents(6.4px 0 0 7px, 3.2px 6.4px);
+        font-size: 15px;
+    }
+
+}

@@ -1,0 +1,6 @@
+@import '../../../variableStyles.scss';
+
+.header__language-item {
+    @include flex(row, flex-start, center);
+    border-bottom: 3px solid $lightWhiteColor;
+}

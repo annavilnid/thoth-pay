@@ -1,0 +1,45 @@
+@import '../../../variableStyles.scss';
+
+.about__description {
+    @include indents(0 10vw 0 7.2vw, 0);
+    position: relative;
+    border-left: $border;
+    border-bottom: $border;
+    border-bottom-left-radius: 2.6vw;
+
+    @media screen and (min-width: 1999px) {
+        @include indents(0 192px 0 138.24px, 0);
+        border-left: $borderMax;
+        border-bottom: $borderMax;
+        border-bottom-left-radius: 50px;
+    }
+
+    @media screen and (max-width: 767px) { 
+        border-left: $borderMin;
+        border-bottom: $borderMin;
+        @include indents(0 6.1vw 0 7vw, 0 0 3.5vw 0);
+        border-bottom-left-radius: 5vw;
+    }
+
+    @media screen and (max-width: 319px) {
+        @include indents(0 19.5px 0 22.4px, 0 0 11.2px 0);
+        border-bottom-left-radius: 16px;
+    }
+
+    &:before {
+        @include pseudo();
+        left: -0.1%;
+        top: 0;
+        width: 28%;
+        border-top: $border;
+
+        @media screen and (min-width: 1999px) {
+            border-top: $borderMax;
+        }
+
+        @media screen and (max-width: 767px) { 
+            border-top: $borderMin;
+            width: 52%;
+        }
+    }
+}

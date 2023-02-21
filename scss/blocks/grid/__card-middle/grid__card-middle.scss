@@ -1,0 +1,21 @@
+@import '../../../variableStyles.scss';
+
+.grid__card-middle {
+    width: 80%;
+    @include gridImage();
+    @include indents(0 0 0.6vw 0, 0.36vw 2.34vw 2.76vw 2.34vw);
+
+    @media screen and (min-width: 1999px) {
+        width: 100%;
+        @include indents(0 0 11.5px 0, 7px 45px 53px 45px);
+    }
+
+    @media screen and (max-width: 767px) {
+        @include indents(0 0 2.4vw 0, 4vw 14vw 14vw 14vw);
+        width: 96%;
+    }
+
+    @media screen and (max-width: 319px) {
+        @include indents(0 0 7.7px 0, 12.8px 44.8px 44.8px 44.8px);
+    }
+}

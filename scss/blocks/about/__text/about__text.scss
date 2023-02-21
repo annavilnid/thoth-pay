@@ -1,0 +1,24 @@
+@import '../../../variableStyles.scss';
+
+.about__text {
+    width: 45%;
+    @include indents(0, 2.1vw 0 3.1vw 2.2vw);
+    @include font(1.56vw, 1.5, $blackColor, start, $fontFamilyRegular);
+
+    @media screen and (min-width: 1999px) {
+        @include indents(0, 40.32px 0 60px 42.24px);
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 767px) { 
+        @include indents(0, 6vw 0 3.1vw 2.2vw); 
+        width: 82%;
+        font-size: 4.2vw;
+        line-height: 1.39;
+    }
+
+    @media screen and (max-width: 319px) {
+        @include indents(0, 19px 0 10px 7px); 
+        font-size: 13.44px;
+    }
+}
