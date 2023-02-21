@@ -1,0 +1,19 @@
+@import '../../../variableStyles.scss';
+
+.node__info {
+    @include indents(0, 0);
+    @include font(2.34vw, 1.11, $darkGrayColor, left, $fontFamilyMedium);
+
+    @media screen and (min-width: 1999px) {
+        font-size: 45px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 4.7vw;
+        line-height: 1.25;
+    }
+
+    @media screen and (max-width: 319px) {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,27 @@
+@import '../../../variableStyles.scss';
+
+.table__row {
+    @include indents(0 0 0 5.9vw, 1vw 0 0 0);
+    @include flex(row, space-around, center);
+    border-bottom: 0.21vw solid $lightWhiteColor;
+    min-height: 4.5vw;
+
+    @media screen and (min-width: 1999px) {
+        @include indents(0 0 0 113.28px, 19.2px 0 0 0);
+        border-bottom: 4.03px solid $lightWhiteColor;
+        min-height: 86.4px;
+    }
+
+    @media screen and (max-width: 767px) {
+        @include indents(0 2% 0 5%, 0);
+        display: grid;
+        width: 85%;
+        grid-template-columns: 32% 23% 41%;
+        column-gap: 5%;
+        min-height: 16.8vw;
+    }
+
+    @media screen and (max-width: 319px) {
+        min-height: 54px;
+    }
+}

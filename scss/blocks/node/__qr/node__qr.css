@@ -1,0 +1,45 @@
+.node__qr {
+  grid-area: qr;
+  height: 31.4vw;
+  width: 43.44vw;
+  max-width: 837px;
+  max-height: 638px;
+  border-top: 0.26vw solid #273B4A;
+  border-right: 0.26vw solid #273B4A;
+  border-bottom: 0.26vw solid #273B4A;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0 0 0 0.9vw #FFFFFF, 0 0 0 1.1vw #273B4A;
+  background-repeat: no-repeat;
+  background-image: url(./../../../../images/qr.svg);
+  background-position: center right;
+  background-size: contain;
+}
+@media screen and (min-width: 1999px) {
+  .node__qr {
+    border-top: 5px solid #273B4A;
+    border-right: 5px solid #273B4A;
+    border-bottom: 5px solid #273B4A;
+    box-shadow: 0 0 0 16px #FFFFFF, 0 0 0 21px #273B4A;
+  }
+}
+@media screen and (max-width: 767px) {
+  .node__qr {
+    margin: 10vw 0 2.5vw 0;
+    padding: 0;
+    align-self: start;
+    height: 67vw;
+    width: 85vw;
+    min-width: 272px;
+    min-height: 214.4px;
+    border-top: 3px solid #273B4A;
+    border-right: 3px solid #273B4A;
+    border-bottom: 3px solid #273B4A;
+    box-shadow: 0 0 0 7px #FFFFFF, 0 0 0 10px #273B4A;
+  }
+}
+@media screen and (max-width: 319px) {
+  .node__qr {
+    margin: 32px 0 9.5px;
+    padding: 0;
+  }
+}/*# sourceMappingURL=node__qr.css.map */

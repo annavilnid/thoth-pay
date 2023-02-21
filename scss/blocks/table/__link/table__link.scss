@@ -1,0 +1,23 @@
+@import '../../../variableStyles.scss';
+
+.table__link {
+    @include hover();
+    @include indents(0, 0);
+    @include font(1.82vw, 2.57, $darkGreenColor, center, $fontFamilyBold);
+    display: inline-block;
+    text-decoration-line: none;
+    align-self: center;
+
+    @media screen and (min-width: 1999px) {
+        font-size: 35px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 3.5vw;
+        line-height: 1.33;
+    }
+
+    @media screen and (max-width: 319px) {
+        font-size: 11px;
+    }
+}

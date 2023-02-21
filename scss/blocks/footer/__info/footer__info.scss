@@ -1,0 +1,24 @@
+@import '../../../variableStyles.scss';
+
+.footer__info {
+    @include indents(0,0);
+    @include font(1.82vw, 1.55, $whiteColor, left, $fontFamilyRegular);
+    width: 35.18%;
+    max-width: 426px;
+    min-width: 86.6px;
+
+    @media screen and (min-width: 1999px) {
+        font-size: 35px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-bottom: 5vw;
+        width: 50%;
+        font-size: 3.5vw;
+        line-height: 1.2;
+    }
+    
+    @media screen and (max-width: 319px) {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,35 @@
+.fees__wrapper {
+  margin: 0 0 0 8.2vw;
+  padding: 0;
+  border-left: 0.26vw solid #273B4A;
+  display: grid;
+  grid-template-columns: 32% 16% 28%;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+}
+@media screen and (min-width: 1999px) {
+  .fees__wrapper {
+    margin: 0 0 0 157px;
+    padding: 0;
+    border-left: 5px solid #273B4A;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fees__wrapper {
+    margin: 0 0 0 7vw;
+    padding: 0;
+    width: 90%;
+    border-left: 3px solid #273B4A;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 319px) {
+  .fees__wrapper {
+    margin: 0 0 0 22.4px;
+    padding: 0;
+  }
+}/*# sourceMappingURL=fees__wrapper.css.map */

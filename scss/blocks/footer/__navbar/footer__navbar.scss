@@ -1,0 +1,14 @@
+@import '../../../variableStyles.scss';
+
+.footer__navbar {
+    @include indents(0, 0);
+    @include flex(column, space-around, stretch);
+    width: 25%;
+    max-width: 361px;
+    min-width: 80px;
+    box-sizing: border-box;
+    
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+}

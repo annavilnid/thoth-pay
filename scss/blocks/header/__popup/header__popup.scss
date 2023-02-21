@@ -1,10 +1,10 @@
 @import '../../../variableStyles.scss';
 
 .header__popup {
-    display: none;
     width: 100%;
 
     @media screen and (max-width: 767px) { 
+        display: none;
         position: absolute;
         height: 100%;
         width: 86%;

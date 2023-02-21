@@ -1,0 +1,25 @@
+.node__info {
+  margin: 0;
+  padding: 0;
+  font-size: 2.34vw;
+  line-height: 1.11;
+  color: #273B4A;
+  text-align: left;
+  font-family: "Gramatika-Medium", sans-serif;
+}
+@media screen and (min-width: 1999px) {
+  .node__info {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .node__info {
+    font-size: 4.7vw;
+    line-height: 1.25;
+  }
+}
+@media screen and (max-width: 319px) {
+  .node__info {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=node__info.css.map */

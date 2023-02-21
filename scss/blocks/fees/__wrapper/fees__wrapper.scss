@@ -1,0 +1,26 @@
+@import '../../../variableStyles.scss';
+
+.fees__wrapper {
+    @include indents(0 0 0 8.2vw, 0);
+    border-left: $border;
+    display: grid;
+    grid-template-columns: 32% 16% 28%;
+    column-gap: 5%;
+
+    @media screen and (min-width: 1999px) {
+        @include indents(0 0 0 157px, 0);
+        border-left: $borderMax;
+    }
+
+    @media screen and (max-width: 767px) {
+        @include indents(0 0 0 7vw, 0);
+        width: 90%;
+        border-left: $borderMin;
+        @include flex(row, flex-end, center);
+        flex-wrap: wrap
+    }
+
+    @media screen and (max-width: 319px) {
+        @include indents(0 0 0 22.4px, 0);
+    }
+}

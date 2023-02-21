@@ -1,0 +1,41 @@
+@import '../../../variableStyles.scss';
+
+.node__qr {
+    grid-area: qr;
+    height: 31.4vw;
+    width: 43.44vw;
+    max-width: 837px;
+    max-height: 638px;
+    border-top: $border;
+    border-right: $border; 
+    border-bottom: $border;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 0 0 0.9vw $whiteColor, 0 0 0 1.1vw $darkGrayColor;
+    @include image(url(./../../../../images/qr.svg));
+    background-position: center right;
+    background-size: contain;
+
+    @media screen and (min-width: 1999px) {
+        border-top: $borderMax;
+        border-right: $borderMax; 
+        border-bottom: $borderMax;
+        box-shadow: 0 0 0 16px $whiteColor, 0 0 0 21px $darkGrayColor;
+    }
+
+    @media screen and (max-width: 767px) {
+        @include indents(10vw 0 2.5vw 0, 0);
+        align-self: start;
+        height: 67vw;
+        width: 85vw;
+        min-width: 272px;
+        min-height: 214.4px;
+        border-top: $borderMin;
+        border-right: $borderMin; 
+        border-bottom: $borderMin;
+        box-shadow: 0 0 0 7px $whiteColor, 0 0 0 10px $darkGrayColor;
+    }
+
+    @media screen and (max-width: 319px) {
+        @include indents(32px 0 9.5px, 0);
+    }
+}

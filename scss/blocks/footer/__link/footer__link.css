@@ -1,0 +1,32 @@
+.footer__link {
+  margin: 0;
+  padding: 0;
+  font-size: 1.98vw;
+  line-height: 1.18;
+  color: #FFFFFF;
+  text-align: left;
+  font-family: "Gramatika-Bold", sans-serif;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  transition: opacity 0.2s linear;
+}
+.footer__link:hover {
+  opacity: 0.6;
+}
+@media screen and (min-width: 1999px) {
+  .footer__link {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__link {
+    width: 50%;
+    font-size: 4.2vw;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 319px) {
+  .footer__link {
+    font-size: 13.4px;
+  }
+}/*# sourceMappingURL=footer__link.css.map */

@@ -1,0 +1,18 @@
+@import '../../../variableStyles.scss';
+
+.fees__title {
+    @include indents(0, 14vw 0 4vw 1vw);
+    width: 100%;
+
+    @media screen and (min-width: 1999px) {
+        @include indents(0, 268.8px 0 76.8px 19.2px);
+    }
+
+    @media screen and (max-width: 767px) {
+        @include indents(0, 16vw 0 7vw 6vw);
+    }
+
+    @media screen and (max-width: 319px) {
+        @include indents(0, 51px 0 22px 10px);
+    }
+}

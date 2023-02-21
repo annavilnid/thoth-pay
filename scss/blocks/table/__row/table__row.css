@@ -1,0 +1,35 @@
+.table__row {
+  margin: 0 0 0 5.9vw;
+  padding: 1vw 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.21vw solid #EEEEEE;
+  min-height: 4.5vw;
+}
+@media screen and (min-width: 1999px) {
+  .table__row {
+    margin: 0 0 0 113.28px;
+    padding: 19.2px 0 0 0;
+    border-bottom: 4.03px solid #EEEEEE;
+    min-height: 86.4px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .table__row {
+    margin: 0 2% 0 5%;
+    padding: 0;
+    display: grid;
+    width: 85%;
+    grid-template-columns: 32% 23% 41%;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+    min-height: 16.8vw;
+  }
+}
+@media screen and (max-width: 319px) {
+  .table__row {
+    min-height: 54px;
+  }
+}/*# sourceMappingURL=table__row.css.map */

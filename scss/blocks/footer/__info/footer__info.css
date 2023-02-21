@@ -1,0 +1,30 @@
+.footer__info {
+  margin: 0;
+  padding: 0;
+  font-size: 1.82vw;
+  line-height: 1.55;
+  color: #FFFFFF;
+  text-align: left;
+  font-family: "Gramatika-Regular", sans-serif;
+  width: 35.18%;
+  max-width: 426px;
+  min-width: 86.6px;
+}
+@media screen and (min-width: 1999px) {
+  .footer__info {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__info {
+    padding-bottom: 5vw;
+    width: 50%;
+    font-size: 3.5vw;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 319px) {
+  .footer__info {
+    font-size: 11px;
+  }
+}/*# sourceMappingURL=footer__info.css.map */

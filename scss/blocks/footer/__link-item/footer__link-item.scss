@@ -1,0 +1,6 @@
+@import '../../../variableStyles.scss';
+
+.footer__link-item {
+    @include indents(0,0);
+    @include flex(column, space-between, stretch);
+}

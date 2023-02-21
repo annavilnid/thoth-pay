@@ -1,0 +1,27 @@
+.node__info_in_bold {
+  margin: 0;
+  padding: 0;
+  font-size: 4.17vw;
+  line-height: 1.11;
+  color: #273B4A;
+  text-align: left;
+  font-family: "Gramatika-Black", sans-serif;
+}
+@media screen and (min-width: 1999px) {
+  .node__info_in_bold {
+    font-size: 90px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .node__info_in_bold {
+    padding-bottom: 3vw;
+    font-size: 7vw;
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 319px) {
+  .node__info_in_bold {
+    padding-bottom: 3vw;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=node__info_in_bold.css.map */

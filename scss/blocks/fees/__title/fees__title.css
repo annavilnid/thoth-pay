@@ -1,0 +1,23 @@
+.fees__title {
+  margin: 0;
+  padding: 14vw 0 4vw 1vw;
+  width: 100%;
+}
+@media screen and (min-width: 1999px) {
+  .fees__title {
+    margin: 0;
+    padding: 268.8px 0 76.8px 19.2px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .fees__title {
+    margin: 0;
+    padding: 16vw 0 7vw 6vw;
+  }
+}
+@media screen and (max-width: 319px) {
+  .fees__title {
+    margin: 0;
+    padding: 51px 0 22px 10px;
+  }
+}/*# sourceMappingURL=fees__title.css.map */

@@ -1,0 +1,27 @@
+.table__percent {
+  margin: 0;
+  padding: 0;
+  font-size: 1.82vw;
+  line-height: 2.57;
+  color: #000000;
+  text-align: center;
+  font-family: "Gramatika-Regular", sans-serif;
+  width: 25vw;
+  max-width: 480px;
+}
+@media screen and (min-width: 1999px) {
+  .table__percent {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .table__percent {
+    width: 100%;
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 319px) {
+  .table__percent {
+    font-size: 11px;
+  }
+}/*# sourceMappingURL=table__percent.css.map */

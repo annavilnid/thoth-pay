@@ -71,5 +71,27 @@
 @import url(../docs/__wrapper-arrow/docs__wrapper-arrow.css);
 @import url(../docs/__wrapper-text/docs__wrapper-text.css);
 @import url(../fees/fees.css);
+@import url(../fees/__wrapper/fees__wrapper.css);
+@import url(../fees/__title/fees__title.css);
+@import url(../fees/__proposal/fees__proposal.css);
+@import url(../table/table.css);
+@import url(../table/__availability/table__availability.css);
+@import url(../table/__row/table__row.css);
+@import url(../table/__link/table__link.css);
+@import url(../table/__links/table__links.css);
+@import url(../table/__option/table__option.css);
+@import url(../table/__percent/table__percent.css);
 @import url(../node/node.css);
-@import url(../footer/footer.css);/*# sourceMappingURL=index.css.map */
+@import url(../node/__border/node__border.css);
+@import url(../node/__info/node__info.css);
+@import url(../node/__info/_in_bold/node__info_in_bold.css);
+@import url(../node/__qr/node__qr.css);
+@import url(../node/__wrapper/node__wrapper.css);
+@import url(../footer/footer.css);
+@import url(../footer/__info/footer__info.css);
+@import url(../footer/__last-content/footer__last-content.css);
+@import url(../footer/__link-item/footer__link-item.scss);
+@import url(../footer/__links/footer__links.css);
+@import url(../footer/__link/footer__link.css);
+@import url(../footer/__navbar/footer__navbar.css);
+@import url(../footer/__wrapper/footer__wrapper.css);/*# sourceMappingURL=index.css.map */

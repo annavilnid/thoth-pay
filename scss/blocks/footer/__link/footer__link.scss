@@ -1,0 +1,22 @@
+@import '../../../variableStyles.scss';
+
+.footer__link {
+    @include indents(0,0);
+    @include font(1.98vw, 1.18, $whiteColor, left, $fontFamilyBold);
+    text-decoration-line: none;
+    @include hover();
+
+    @media screen and (min-width: 1999px) {
+        font-size: 38px;
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 50%;
+        font-size: 4.2vw;
+        line-height: 1.5;
+    }
+
+    @media screen and (max-width: 319px) {
+        font-size: 13.4px;
+    }
+}

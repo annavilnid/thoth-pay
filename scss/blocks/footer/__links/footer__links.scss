@@ -1,0 +1,13 @@
+@import '../../../variableStyles.scss';
+
+.footer__links {
+    @include indents(0,0);
+    @include flex(column, space-between, stretch);
+    height: 100%;
+    display: flex;
+    list-style: none;
+
+    @media screen and (max-width: 767px) {
+        padding-bottom: 5vw;
+    }
+}

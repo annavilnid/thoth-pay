@@ -19,7 +19,7 @@
         position: relative;
         grid-area: lang;
         @include indents(4vw 1.5vw 13vw 0, 0);
-        @include flex(row, end, center);
+        @include flex(row, flex-end, center);
     }
 
     @media screen and (max-width: 319px) {

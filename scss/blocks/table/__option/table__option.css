@@ -1,0 +1,28 @@
+.table__option {
+  margin: 0;
+  padding: 0;
+  font-size: 1.82vw;
+  line-height: 2.57;
+  color: #000000;
+  text-align: center;
+  font-family: "Gramatika-Regular", sans-serif;
+  width: 26vw;
+  max-width: 499.2px;
+}
+@media screen and (min-width: 1999px) {
+  .table__option {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .table__option {
+    width: 100%;
+    font-size: 3.5vw;
+    line-height: 1.33;
+  }
+}
+@media screen and (max-width: 319px) {
+  .table__option {
+    font-size: 11px;
+  }
+}/*# sourceMappingURL=table__option.css.map */

@@ -1,0 +1,29 @@
+.footer__last-content {
+  margin: 3.2vw 5% 0 8%;
+  padding: 0;
+  font-size: 1.19vw;
+  line-height: 1.17;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Gramatika-Regular", sans-serif;
+}
+@media screen and (min-width: 1999px) {
+  .footer__last-content {
+    font-size: 23px;
+    margin-top: 61.5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__last-content {
+    font-size: 3.5vw;
+    line-height: 1.2;
+    margin: 3.2vw 6% 0 7%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 319px) {
+  .footer__last-content {
+    font-size: 11px;
+    margin-top: 10.2px;
+  }
+}/*# sourceMappingURL=footer__last-content.css.map */

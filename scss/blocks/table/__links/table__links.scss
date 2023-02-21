@@ -1,0 +1,18 @@
+@import '../../../variableStyles.scss';
+
+.table__links {
+    @include indents(0, 0 0 0 19%);
+    display: grid;
+    grid-template-columns: 64% 96%;
+    column-gap: 10%;
+
+    @media screen and (max-width: 767px) {
+         @include indents(3vw 0 0 0, 0 0 0 29%);
+        grid-template-columns: 37% 51%;
+        column-gap: 15%;
+    }
+
+    @media screen and (max-width: 319px) {
+        @include indents(9.6px 0 0 0, 0 0 0 29%);
+    }
+}

@@ -9,6 +9,6 @@
 
     @media screen and (max-width: 767px) {
         @include indents(0,0 0 0 10%);
-        @include flex(column, center, end);
+        @include flex(column, center, flex-end);
     }
 }
