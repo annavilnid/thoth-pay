@@ -2,6 +2,7 @@
 
 .header__popup_is-opened {
     @media screen and (max-width: 767px) { 
+        display: block;
         right: 0px;
         transition: 0.5s ease;
     }

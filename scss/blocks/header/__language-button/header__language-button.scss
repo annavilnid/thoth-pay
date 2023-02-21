@@ -10,6 +10,7 @@
     max-height: 24px;
     border: none;
     @include hover();
+    transition: 0.5s ease;
 
     @media screen and (min-width: 1999px) {
         margin-right: 51px;

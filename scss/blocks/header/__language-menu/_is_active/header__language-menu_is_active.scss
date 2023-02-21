@@ -1,0 +1,6 @@
+@import '../../../../variableStyles.scss';
+
+.header__language-menu_is_active {
+    display: block;
+    transition: 0.5s ease;
+}

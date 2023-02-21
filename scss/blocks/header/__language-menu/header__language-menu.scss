@@ -1,7 +1,6 @@
 @import '../../../variableStyles.scss';
 
 .header__language-menu {
-    display: none;
     box-sizing: border-box;
     padding: 45px;
     position: absolute;
@@ -12,6 +11,8 @@
     box-shadow: 0px 4px 15px rgba(238, 238, 238, 0.61);
     border-radius: 20px;
     z-index: 11;
+    display: none;
+    transition: 0.5s ease;
 
     @media screen and (min-width: 1999px) {
         top: 101px;

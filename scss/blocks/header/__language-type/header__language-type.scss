@@ -1,6 +1,7 @@
 @import '../../../variableStyles.scss';
 
 .header__language-type {
+    @include hover;
     @include indents(0, 0);
     @include font(17px, 1.4, $mediumGrayColor, left, $fontFamilyRegular);
     border: none;
