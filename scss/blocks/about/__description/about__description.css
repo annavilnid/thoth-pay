@@ -2,8 +2,8 @@
   margin: 0 10vw 0 7.2vw;
   padding: 0;
   position: relative;
-  border-left: 0.26vw solid #273B4A;
   border-bottom: 0.26vw solid #273B4A;
+  border-left: 0.26vw solid #273B4A;
   border-bottom-left-radius: 2.6vw;
 }
 @media screen and (min-width: 1999px) {

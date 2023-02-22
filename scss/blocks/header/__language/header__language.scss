@@ -1,11 +1,5 @@
 @import '../../../variableStyles.scss';
 
-
-
-
-
-
-
 .header__language { 
     @include indents(2.2vw 0 1vw 0, 0);
     @include flex(row, center, center);
