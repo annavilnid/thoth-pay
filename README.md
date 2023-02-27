@@ -1,5 +1,5 @@
 # Сервис "Thothpay"
-* Верстка мобильной и настольной версии лендинга для биткойн-шлюза.
+Верстка мобильной и настольной версии лендинга для биткойн-шлюза.
 
 
 **Описание**
@@ -7,10 +7,10 @@
 * Стили написаны с помощью SCSS.
 
 **Figma**
-* [Ссылка на макет в Figma](https://www.figma.com/file/CUrFr4MVej1iWfrRo7FM3w/landing_Tothpay?node-id=0%3A1&t=983wftZoch7cQnDH-1)
+* [Ссылка на макет в Figma.](https://www.figma.com/file/CUrFr4MVej1iWfrRo7FM3w/landing_Tothpay?node-id=0%3A1&t=983wftZoch7cQnDH-1)
 
 **Реализованный проект**
-* [Ссылка на GitHub Рages](https://annavilnid.github.io/thoth-pay/)
+* [Ссылка на GitHub Рages.](https://annavilnid.github.io/thoth-pay/)
 
 **Планы**
-Сейчас формируется Backend, когда проект будет полностью готов, будет добавлена ссылка
+Сейчас формируется Backend, когда проект будет полностью готов, будет добавлена ссылка.
