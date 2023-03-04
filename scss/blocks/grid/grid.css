@@ -35,7 +35,7 @@
   position: absolute;
   display: inline-block;
   background-repeat: no-repeat;
-  background-image: url("../../../../images/arrow-small.svg");
+  background-image: url("../../../images/arrow-small.svg");
   background-position: center center;
   background-size: contain;
   width: 4vw;
@@ -57,7 +57,7 @@
   position: absolute;
   display: inline-block;
   background-repeat: no-repeat;
-  background-image: url("../../../../images/arrow-small.svg");
+  background-image: url("../../../images/arrow-small.svg");
   background-position: center center;
   background-size: contain;
   width: 4vw;

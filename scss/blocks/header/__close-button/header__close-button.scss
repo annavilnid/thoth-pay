@@ -3,12 +3,12 @@
 .header__close-button {
     display: none;
 
-    @media screen and (max-width: 767px) { 
+    @media screen and (max-width: 767px) {
         @include hover();
         @include indents(11.7vw 8vw 32vw, 0);
         grid-area: close;
         display: block;
-        background: url('../../../../../images/close-button.svg') center center no-repeat; 
+        background: url('../../../../images/close-button.svg') center center no-repeat;
         background-size: contain;
         justify-self: end;
         border: none;

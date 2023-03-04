@@ -8,7 +8,7 @@
     padding: 0;
     grid-area: close;
     display: block;
-    background: url("../../../../../images/close-button.svg") center center no-repeat;
+    background: url("../../../../images/close-button.svg") center center no-repeat;
     background-size: contain;
     justify-self: end;
     border: none;

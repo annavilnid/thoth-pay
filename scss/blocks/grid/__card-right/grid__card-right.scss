@@ -3,17 +3,9 @@
 .grid__card-right {
     @include gridImage();
     width: 100%;
-    padding: 1.56vw;
-
-    @media screen and (min-width: 1999px) {
-        padding: 30px;
-    }
+    padding: 0;
 
     @media screen and (max-width: 767px) {
         width: 96%;
-    }
-
-    @media screen and (max-width: 319px) {
-        padding: 5px;
     }
 }

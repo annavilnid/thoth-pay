@@ -4,7 +4,7 @@
     @include indents(0, 0 2vw 1.5vw 6vw);
     display: grid;
     grid-template-columns: repeat(3, 28%);
-    grid-auto-rows: auto; 
+    grid-auto-rows: auto;
     column-gap: 7%;
     position: relative;
 
@@ -23,7 +23,7 @@
 
     &:before {
         @include pseudo();
-        @include image(url('../../../../images/arrow-small.svg'));
+        @include image(url('../../../images/arrow-small.svg'));
         background-position: center center;
         background-size: contain;
         width: 4vw;
@@ -42,7 +42,7 @@
 
     &:after {
         @include pseudo();
-        @include image(url('../../../../images/arrow-small.svg'));
+        @include image(url('../../../images/arrow-small.svg'));
         background-position: center center;
         background-size: contain;
         width: 4vw;
