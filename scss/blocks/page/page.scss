@@ -1,6 +1,7 @@
 .body {
     height: 100%;
     position: relative;
+    overflow-x: hidden;
     margin: 0 auto;
     min-width: 320px;
     max-width: 2000px;
@@ -12,6 +13,7 @@
 }
 
 .page {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 
     @media screen and (prefers-reduced-motion: reduce) {
