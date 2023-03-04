@@ -2,9 +2,9 @@
 
 .header__links {
     @include indents(0,0);
-    @include flex(row, space-around, center);
+    @include flex(row, center, center);
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     list-style: none;
 
     @media screen and (max-width: 767px) {
