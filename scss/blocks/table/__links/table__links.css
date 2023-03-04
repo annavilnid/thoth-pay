@@ -1,23 +1,25 @@
 .table__links {
+  width: 53%;
   margin: 0;
-  padding: 0 0 0 19%;
+  padding: 0 0 0 39.5%;
   display: grid;
-  grid-template-columns: 64% 96%;
-  -moz-column-gap: 10%;
-       column-gap: 10%;
+  grid-template-columns: 40% 53%;
+  -moz-column-gap: 6%;
+       column-gap: 6%;
 }
 @media screen and (max-width: 767px) {
   .table__links {
     margin: 3vw 0 0 0;
-    padding: 0 0 0 29%;
-    grid-template-columns: 37% 51%;
-    -moz-column-gap: 15%;
-         column-gap: 15%;
+    padding: 0 0 0 35%;
+    width: 58%;
+    grid-template-columns: 32% 60%;
+    -moz-column-gap: 8%;
+         column-gap: 8%;
   }
 }
 @media screen and (max-width: 319px) {
   .table__links {
     margin: 9.6px 0 0 0;
-    padding: 0 0 0 29%;
+    padding: 0 0 0 35%;
   }
 }/*# sourceMappingURL=table__links.css.map */

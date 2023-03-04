@@ -8,8 +8,7 @@
   text-align: center;
   font-family: "Gramatika-Bold", sans-serif;
   display: inline-block;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  text-decoration-line: none;
   align-self: center;
 }
 .table__link:hover {

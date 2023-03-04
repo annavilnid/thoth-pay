@@ -6,8 +6,7 @@
   color: #FFFFFF;
   text-align: left;
   font-family: "Gramatika-Bold", sans-serif;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  text-decoration-line: none;
   transition: opacity 0.2s linear;
 }
 .footer__link:hover {

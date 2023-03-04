@@ -6,8 +6,7 @@
   color: #9A9A9A;
   text-align: center;
   font-family: "Gramatika-Regular", sans-serif;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  text-decoration-line: none;
   transition: opacity 0.2s linear;
 }
 .header__link:hover {
