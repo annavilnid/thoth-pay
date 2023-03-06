@@ -9,8 +9,8 @@
 **Figma**
 * [Ссылка на макет в Figma.](https://www.figma.com/file/CUrFr4MVej1iWfrRo7FM3w/landing_Tothpay?node-id=0%3A1&t=983wftZoch7cQnDH-1)
 
-**Реализованный проект**
+**Верстка**
 * [Ссылка на GitHub Рages.](https://annavilnid.github.io/thoth-pay/)
 
-**Планы**
-Сейчас формируется Backend, когда проект будет полностью готов, будет добавлена ссылка.
+**Реализованный проект**
+* https://thothpay.com/
