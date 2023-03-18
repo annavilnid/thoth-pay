@@ -13,4 +13,4 @@
 * [Ссылка на GitHub Рages.](https://annavilnid.github.io/thoth-pay/)
 
 **Реализованный проект**
-* https://thothpay.com/
+* https://thothpay.com
